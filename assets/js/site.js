@@ -341,32 +341,11 @@ function initReveal() {
 /* =========================================================
  * 9. 숫자 카운트업 (data-count="1200")
  * ========================================================= */
+/* 숫자는 애니메이션 없이 바로 표시합니다 (기관 자료는 값이 먼저 보이는 편이 낫습니다) */
 function initCounters() {
-  const nums = document.querySelectorAll('[data-count]');
-  if (!nums.length || !('IntersectionObserver' in window)) {
-    nums.forEach(function (el) { el.textContent = Number(el.dataset.count).toLocaleString('ko-KR'); });
-    return;
-  }
-  const io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = Number(el.dataset.count) || 0;
-      const duration = 1400;
-      const start = performance.now();
-
-      function step(now) {
-        const p = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * eased).toLocaleString('ko-KR');
-        if (p < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-      io.unobserve(el);
-    });
-  }, { threshold: 0.4 });
-
-  nums.forEach(function (el) { io.observe(el); });
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    el.textContent = Number(el.dataset.count).toLocaleString('ko-KR');
+  });
 }
 
 /* =========================================================

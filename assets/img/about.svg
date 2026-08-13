@@ -1,23 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="협회 소개">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#061726"/><stop offset="1" stop-color="#1a527e"/>
-    </linearGradient>
-    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="900" fill="url(#g)"/>
-  <rect width="1200" height="900" fill="url(#s)"/>
-  <g fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="3">
-    <path d="M-40 620c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
-    <path d="M-40 700c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
-    <path d="M-40 780c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
+  <rect width="1200" height="900" fill="#dfe7ee"/>
+  <g fill="none" stroke="#c3d0dc" stroke-width="2">
+    <path d="M0 640c120-46 240-46 360 0s240 46 360 0 240-46 360 0 120 30 180 22"/>
+    <path d="M0 706c120-46 240-46 360 0s240 46 360 0 240-46 360 0 120 30 180 22"/>
   </g>
-  <circle cx="960" cy="200" r="120" fill="#ffffff" fill-opacity=".08"/>
-  <circle cx="960" cy="200" r="80" fill="#ffffff" fill-opacity=".06"/>
-  <text x="600" y="430" text-anchor="middle" fill="#ffffff" fill-opacity=".92"
-        font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="52" font-weight="700">협회 소개</text>
-  <text x="600" y="490" text-anchor="middle" fill="#ffffff" fill-opacity=".55"
-        font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" letter-spacing="4">ABOUT US</text>
+  <g fill="#b3c2d0">
+    <rect x="524" y="392" width="152" height="104" rx="4"/>
+    <circle cx="566" cy="428" r="13" fill="#dfe7ee"/>
+    <path d="M540 486l44-42 30 28 26-22 36 36z" fill="#dfe7ee"/>
+  </g>
+  <rect x="0" y="838" width="1200" height="62" fill="#0a2942" fill-opacity=".82"/>
+  <text x="30" y="877" fill="#ffffff" fill-opacity=".9"
+        font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="26">협회 소개</text>
 </svg>
