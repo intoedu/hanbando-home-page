@@ -1,0 +1,41 @@
+# 홈페이지 자동 배포 (GitHub Pages)
+# main 브랜치에 변경이 올라가면 자동으로 웹사이트가 갱신됩니다.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 소스 내려받기
+        uses: actions/checkout@v4
+
+      - name: Pages 설정 (없으면 자동 활성화)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: 사이트 파일 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
