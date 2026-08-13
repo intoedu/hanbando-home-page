@@ -43,12 +43,7 @@
 
       <!-- 검색 -->
       <div class="searchbar">
-        <label class="visually-hidden" for="searchType" style="position:absolute;left:-9999px">검색 조건</label>
-        <select class="select" id="searchType" style="width:auto">
-          <option>제목</option>
-          <option>내용</option>
-          <option>제목+내용</option>
-        </select>
+        <label class="visually-hidden" for="searchWord" style="position:absolute;left:-9999px">게시글 검색</label>
         <input class="input" type="search" id="searchWord"
                data-ko-placeholder="검색어를 입력하세요"
                data-en-placeholder="Search keyword"
@@ -148,17 +143,14 @@
         </div>
       </div>
 
-      <nav class="pagination" aria-label="페이지">
-        <a href="#" aria-label="이전">‹</a>
-        <span class="is-current">1</span>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#" aria-label="다음">›</a>
-      </nav>
+      <p id="boardEmpty" class="center muted mt-4" style="display:none;padding:40px 0">
+        <span data-lang="ko">검색하신 내용과 일치하는 글이 없습니다.</span>
+        <span data-lang="en">No posts match your search.</span>
+      </p>
 
       <p class="muted center mt-4" style="font-size:14px">
-        <span data-lang="ko">※ 게시글은 관리자 페이지에서 직접 등록·수정하실 수 있도록 연동 예정입니다.</span>
-        <span data-lang="en">※ Posts will be manageable from the admin page once the board is connected.</span>
+        <span data-lang="ko">※ 게시글은 news.html 파일을 직접 수정해 추가·삭제하실 수 있습니다. 수정 방법은 README 파일에 정리해 두었습니다.</span>
+        <span data-lang="en">※ Posts are managed by editing news.html directly. See the README for instructions.</span>
       </p>
     </div>
   </section>

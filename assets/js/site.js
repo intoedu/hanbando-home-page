@@ -434,15 +434,44 @@ function initLightbox() {
 }
 
 /* =========================================================
- * 13. 폼 검사
- *   실제 메일 발송은 서버(또는 Formspree 등 외부 서비스) 연결이 필요합니다.
- *   form 태그의 action 값만 바꾸면 바로 연동됩니다.
+ * 13. 문의 · 신청 양식
+ * ---------------------------------------------------------
+ *   외부 서비스(서버, Formspree 등)를 쓰지 않습니다.
+ *   [보내기]를 누르면 작성한 내용이 메일 앱에 자동으로 채워진 채 열리고,
+ *   메일 앱이 없는 분을 위해 [내용 복사] 버튼도 함께 제공합니다.
+ *   받는 주소를 바꾸려면 맨 위 SITE.email 만 고치면 됩니다.
  * ========================================================= */
+
+/* 입력 값을 읽어 보기 좋은 텍스트로 정리 */
+function collectForm(form) {
+  const lines = [];
+  form.querySelectorAll('.field').forEach(function (field) {
+    const labelEl = field.querySelector('.field__label');
+    if (!labelEl) return;
+    const koLabel = labelEl.querySelector('[data-lang="ko"]');
+    const label = (koLabel ? koLabel.textContent : labelEl.textContent)
+      .replace('*', '').trim();
+
+    const radio = field.querySelector('input[type="radio"]:checked');
+    const check = field.querySelector('input[type="checkbox"]');
+    const input = field.querySelector('.input, .select, .textarea');
+
+    const parts = [];
+    if (radio) parts.push(radio.value);
+    if (input && input.value.trim()) parts.push(input.value.trim());  // 직접 입력란 등
+    if (!radio && !input && check) parts.push(check.checked ? '동의함' : '동의하지 않음');
+
+    if (parts.length) lines.push(label + ' : ' + parts.join(' / '));
+  });
+  return lines.join('\n');
+}
+
 function initForms() {
   document.querySelectorAll('form[data-validate]').forEach(function (form) {
     const note = form.querySelector('.form-note');
 
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
       const lang = document.documentElement.getAttribute('lang');
       let invalid = null;
 
@@ -458,7 +487,6 @@ function initForms() {
       }
 
       if (invalid) {
-        e.preventDefault();
         if (note) {
           note.className = 'form-note form-note--error is-visible';
           note.textContent = lang === 'en'
@@ -470,19 +498,71 @@ function initForms() {
         return;
       }
 
-      // action이 지정되지 않았으면 데모 안내만 표시
-      if (!form.getAttribute('action')) {
-        e.preventDefault();
-        if (note) {
-          note.className = 'form-note is-visible';
-          note.textContent = lang === 'en'
-            ? 'Thank you. (Demo mode — connect a form service or server to receive submissions.)'
-            : '접수되었습니다. (현재는 미리보기 상태이며, 메일 수신 설정 후 실제 전송됩니다.)';
+      const subject = (form.dataset.subject || '홈페이지 문의') + ' (' + new Date().toLocaleDateString('ko-KR') + ')';
+      const body = collectForm(form);
+
+      // 1) 메일 앱 열기
+      window.location.href = 'mailto:' + SITE.email +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+      // 2) 메일 앱이 없을 때를 위한 복사 안내
+      if (note) {
+        note.className = 'form-note is-visible';
+        note.innerHTML = lang === 'en'
+          ? 'Your mail app should open with the message filled in. If it does not, ' +
+            '<button type="button" class="form-note__copy">copy the text</button> ' +
+            'and send it to ' + SITE.email + '.'
+          : '메일 앱이 열리면 그대로 보내주세요. 메일 앱이 열리지 않으면 ' +
+            '<button type="button" class="form-note__copy">내용 복사</button> 를 눌러 ' +
+            SITE.email + ' 으로 보내주시거나, ' + SITE.tel + ' 로 전화 주셔도 됩니다.';
+
+        const copyBtn = note.querySelector('.form-note__copy');
+        if (copyBtn) {
+          copyBtn.addEventListener('click', function () {
+            const text = subject + '\n\n' + body;
+            if (navigator.clipboard) {
+              navigator.clipboard.writeText(text).then(function () {
+                copyBtn.textContent = '복사했습니다';
+              });
+            } else {
+              const ta = document.createElement('textarea');
+              ta.value = text; document.body.appendChild(ta);
+              ta.select(); document.execCommand('copy'); ta.remove();
+              copyBtn.textContent = '복사했습니다';
+            }
+          });
         }
-        form.reset();
       }
     });
   });
+}
+
+/* =========================================================
+ * 13-B. 게시판 검색 (브라우저 안에서 바로 걸러냅니다)
+ * ========================================================= */
+function initBoardSearch() {
+  const input = document.getElementById('searchWord');
+  const board = document.getElementById('board');
+  if (!input || !board) return;
+
+  function run() {
+    const q = input.value.trim().toLowerCase();
+    let hit = 0;
+    board.querySelectorAll('[data-cat]').forEach(function (row) {
+      const text = row.textContent.toLowerCase();
+      const show = !q || text.indexOf(q) > -1;
+      row.style.display = show ? '' : 'none';
+      if (show) hit++;
+    });
+    const empty = document.getElementById('boardEmpty');
+    if (empty) empty.style.display = hit ? 'none' : '';
+  }
+
+  input.addEventListener('input', run);
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); run(); } });
+  const btn = input.parentElement.querySelector('button');
+  if (btn) btn.addEventListener('click', run);
 }
 
 /* =========================================================
@@ -503,4 +583,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initTabs();
   initLightbox();
   initForms();
+  initBoardSearch();
 });

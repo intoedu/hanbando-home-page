@@ -669,6 +669,13 @@ table { border-collapse: collapse; width: 100%; }
 }
 .form-note.is-visible { display: block; }
 .form-note--error { background: #fdecea; color: var(--danger); }
+/* 안내문 속 '내용 복사' 버튼 */
+.form-note__copy {
+  border: 1px solid currentColor; background: #fff; color: inherit;
+  padding: 3px 10px; border-radius: 2px; font-size: 13px; font-weight: 700;
+  margin: 0 2px;
+}
+.form-note__copy:hover { background: var(--teal-100); }
 
 /* =========================================================
    14. 연락 / 지도 / FAQ
