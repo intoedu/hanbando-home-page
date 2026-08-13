@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>오시는 길 | 사단법인 한반도 양식 기술보급협회</title>
-<meta name="description" content="사단법인 한반도 양식 기술보급협회 사무국 위치, 대중교통 및 자가용 이용 안내입니다.">
+<title>오시는 길 | 사단법인 한반도양식기술보급협회</title>
+<meta name="description" content="사단법인 한반도양식기술보급협회 사무국 위치, 대중교통 및 자가용 이용 안내입니다.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%230a2942'/><path d='M12 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2' fill='none' stroke='%2317a9ad' stroke-width='4' stroke-linecap='round'/></svg>">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -32,26 +32,41 @@
   <section class="section">
     <div class="wrap">
 
-      <!-- 지도 -->
+      <!-- 사무국 지도 -->
+      <div class="section-head reveal" style="margin-bottom:24px">
+        <span class="eyebrow">Head Office</span>
+        <h2 class="h-2 mt-2"><span data-lang="ko">서울 사무국</span><span data-lang="en">Seoul Head Office</span></h2>
+        <p class="lead mt-2">
+          <span data-lang="ko">서울특별시 영등포구 국회대로 800, 706호</span>
+          <span data-lang="en">#706, 800 Gukhoe-daero, Yeongdeungpo-gu, Seoul</span>
+        </p>
+      </div>
+
       <div class="map-frame reveal">
         <!--
           ▼ 지도 연결 방법
           네이버 지도 / 카카오맵 / 구글 지도에서 '지도 공유 → 소스코드(iframe)'를 복사해
-          아래 map-placeholder div 를 iframe 으로 교체하시면 됩니다.
-          예) <iframe src="https://www.google.com/maps/embed?pb=..." loading="lazy"></iframe>
+          아래 iframe 의 src 주소만 바꿔주시면 됩니다.
         -->
-        <div class="map-placeholder">
-          <div>
-            <p style="font-weight:700;color:var(--navy-800);font-size:17px">
-              <span data-lang="ko">지도가 표시될 자리입니다</span>
-              <span data-lang="en">Map will be displayed here</span>
-            </p>
-            <p class="mt-1" style="font-size:14px">
-              <span data-lang="ko">사무국 주소를 알려주시면 네이버·카카오·구글 지도를 연결해 드립니다.</span>
-              <span data-lang="en">Send us the office address and we will embed the map.</span>
-            </p>
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EA%B5%AD%ED%9A%8C%EB%8C%80%EB%A1%9C%20800&output=embed"
+          title="서울 사무국 위치" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- 사업 부지 지도 -->
+      <div class="section-head reveal mt-5" style="margin-bottom:24px">
+        <span class="eyebrow">Project Site</span>
+        <h2 class="h-2 mt-2"><span data-lang="ko">강화 사업 부지 (석모도)</span><span data-lang="en">Ganghwa Project Site</span></h2>
+        <p class="lead mt-2">
+          <span data-lang="ko">인천광역시 강화군 삼산면 상리 619 — 터널형 스마트 양식 및 스마트 염전 사업 예정지</span>
+          <span data-lang="en">619 Sang-ri, Samsan-myeon, Ganghwa-gun, Incheon — site for the tunnel farm and smart salt farm</span>
+        </p>
+      </div>
+
+      <div class="map-frame reveal">
+        <iframe
+          src="https://www.google.com/maps?q=%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EA%B0%95%ED%99%94%EA%B5%B0%20%EC%82%BC%EC%82%B0%EB%A9%B4%20%EC%83%81%EB%A6%AC%20619&output=embed"
+          title="강화 사업 부지 위치" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="split mt-5">
@@ -66,10 +81,14 @@
               <span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
               <div>
                 <h4><span data-lang="ko">주소</span><span data-lang="en">Address</span></h4>
-                <p class="muted" style="font-size:16px;font-weight:600">
-                  <span data-lang="ko">주소 확정 후 안내 예정</span>
-                  <span data-lang="en">To be updated</span>
+                <p style="font-size:16px">
+                  <span data-lang="ko">서울특별시 영등포구 국회대로 800, 706호</span>
+                  <span data-lang="en">#706, 800 Gukhoe-daero, Yeongdeungpo-gu, Seoul</span>
                 </p>
+                <span class="muted">
+                  <span data-lang="ko">사업 부지 : 인천광역시 강화군 삼산면 상리 619</span>
+                  <span data-lang="en">Project site: 619 Sang-ri, Samsan-myeon, Ganghwa-gun, Incheon</span>
+                </span>
               </div>
             </div>
 

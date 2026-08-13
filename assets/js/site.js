@@ -14,17 +14,21 @@
  * 1. 사이트 기본 정보  ← 연락처·주소가 바뀌면 여기만 수정
  * ========================================================= */
 const SITE = {
-  nameKo: '사단법인 한반도 양식 기술보급협회',
+  nameKo: '사단법인 한반도양식기술보급협회',
   nameEn: 'Korea Peninsula Aquaculture Technology Association',
-  shortKo: '한반도 양식 기술보급협회',
+  shortKo: '한반도양식기술보급협회',
   shortEn: 'KPATA',
   ceoKo: '김창운',
   ceoEn: 'Kim Chang-woon',
   tel: '010-2600-2608',
   telHref: '01026002608',
   email: 'seoul4624@naver.com',
-  addressKo: '서울특별시 (상세 주소 준비 중)',
-  addressEn: 'Seoul, Republic of Korea (Address to be updated)',
+  addressKo: '서울특별시 영등포구 국회대로 800, 706호',
+  addressEn: '#706, 800 Gukhoe-daero, Yeongdeungpo-gu, Seoul, Korea',
+  siteKo: '사업 부지 : 인천광역시 강화군 삼산면 상리 619',
+  siteEn: 'Project site: 619 Sang-ri, Samsan-myeon, Ganghwa-gun, Incheon',
+  labKo: '한반도해안천여의도연구소',
+  labEn: 'Hanbando Coastal Stream Yeouido Research Institute',
   hoursKo: '평일 09:00 – 18:00 / 점심 12:00 – 13:00 (주말·공휴일 휴무)',
   hoursEn: 'Weekdays 09:00 – 18:00 (Closed on weekends & holidays)',
   bankKo: '은행명 준비 중',
@@ -120,7 +124,7 @@ function buildHeader() {
     <a class="brand" href="index.html">
       ${LOGO_MARK}
       <span class="brand__text">
-        <span class="brand__ko"><span data-lang="ko">한반도 양식 기술보급협회</span><span data-lang="en">KPATA</span></span>
+        <span class="brand__ko"><span data-lang="ko">한반도양식기술보급협회</span><span data-lang="en">KPATA</span></span>
         <span class="brand__en"><span data-lang="ko">Korea Peninsula Aquaculture Tech.</span><span data-lang="en">Aquaculture Technology Association</span></span>
       </span>
     </a>
@@ -173,8 +177,8 @@ function buildFooter() {
         </span>
       </div>
       <p class="footer__desc">
-        <span data-lang="ko">수산 양식 기술의 보급과 전문 인력 양성, 해양 안전교육, 해외시장 개척을 통해 대한민국 수산산업의 미래를 함께 만들어 갑니다.</span>
-        <span data-lang="en">Advancing Korea's fisheries industry through aquaculture technology transfer, professional training, marine safety education and overseas market development.</span>
+        <span data-lang="ko">친환경 무동력 터널형 스마트 양식 플랜트와 에너지 자립형 스마트 염전 기술로 기후 위기 시대의 식량 안보 해법을 만들어 갑니다.</span>
+        <span data-lang="en">Building food-security solutions for the climate era through power-free tunnel aquaculture plants and energy-independent smart salt farms.</span>
       </p>
       <div class="sns">
         <a href="${SITE.sns.youtube}" aria-label="YouTube" target="_blank" rel="noopener">${ICON.youtube}</a>
@@ -201,6 +205,8 @@ function buildFooter() {
         <span><strong>E.</strong> <a href="mailto:${SITE.email}">${SITE.email}</a></span>
         <span data-lang="ko"><strong>주소.</strong> ${SITE.addressKo}</span>
         <span data-lang="en"><strong>Address.</strong> ${SITE.addressEn}</span>
+        <span data-lang="ko"><strong>부지.</strong> 인천광역시 강화군 삼산면 상리 619</span>
+        <span data-lang="en"><strong>Site.</strong> 619 Sang-ri, Samsan-myeon, Ganghwa-gun, Incheon</span>
         <span data-lang="ko"><strong>운영.</strong> ${SITE.hoursKo}</span>
         <span data-lang="en"><strong>Hours.</strong> ${SITE.hoursEn}</span>
       </div>
