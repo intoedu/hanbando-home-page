@@ -20,20 +20,27 @@ const SITE = {
   shortEn: 'KPATA',
   ceoKo: '김창운',
   ceoEn: 'Kim Chang-woon',
-  tel: '010-2600-2608',
-  telHref: '01026002608',
+  tel: '02-780-3880',
+  telHref: '027803880',
+  mobile: '010-2600-2608',
+  mobileHref: '01026002608',
+  fax: '02-780-3870',
   email: 'seoul4624@naver.com',
-  addressKo: '서울특별시 영등포구 국회대로 800, 706호',
-  addressEn: '#706, 800 Gukhoe-daero, Yeongdeungpo-gu, Seoul, Korea',
+  // ※ 주소는 사업자등록증(국세청) 기재 기준입니다.
+  addressKo: '서울특별시 영등포구 국회대로 800, 604호 (여의도동, 여의도 파라곤)',
+  addressEn: '#604 Yeouido Paragon, 800 Gukhoe-daero, Yeongdeungpo-gu, Seoul, Korea',
   siteKo: '사업 부지 : 인천광역시 강화군 삼산면 상리 619',
   siteEn: 'Project site: 619 Sang-ri, Samsan-myeon, Ganghwa-gun, Incheon',
   labKo: '한반도해안천여의도연구소',
   labEn: 'Hanbando Coastal Stream Yeouido Research Institute',
+  bizNo: '444-82-00341',            // 사업자등록번호
+  regNo: '해양수산부 산하 제278호',   // 법인 등록
+  copyrightNo: '제C-2016-017641호',  // 엠블럼 저작등록
   hoursKo: '평일 09:00 – 18:00 / 점심 12:00 – 13:00 (주말·공휴일 휴무)',
   hoursEn: 'Weekdays 09:00 – 18:00 (Closed on weekends & holidays)',
-  bankKo: '은행명 준비 중',
-  accountNo: '000-000000-00-000',
-  accountOwnerKo: '(사)한반도 양식 기술보급협회',
+  bankKo: '수협',
+  accountNo: '1010-1884-2957',
+  accountOwnerKo: '한반도양식기술보급협회',
   sns: {
     youtube: '#',
     instagram: '#',
@@ -111,6 +118,7 @@ function buildHeader() {
   <div class="wrap">
     <div class="topbar__info">
       <span>${ICON.phone}<a href="tel:${SITE.telHref}">${SITE.tel}</a></span>
+      <span>${ICON.phone}<a href="tel:${SITE.mobileHref}">${SITE.mobile}</a></span>
       <span>${ICON.mail}<a href="mailto:${SITE.email}">${SITE.email}</a></span>
     </div>
     <div class="topbar__links">
@@ -201,7 +209,8 @@ function buildFooter() {
     <div>
       <h4><span data-lang="ko">연락처</span><span data-lang="en">Contact</span></h4>
       <div class="footer__contact">
-        <span><strong>T.</strong> <a href="tel:${SITE.telHref}">${SITE.tel}</a></span>
+        <span><strong>T.</strong> <a href="tel:${SITE.telHref}">${SITE.tel}</a> · <a href="tel:${SITE.mobileHref}">${SITE.mobile}</a></span>
+        <span><strong>F.</strong> ${SITE.fax}</span>
         <span><strong>E.</strong> <a href="mailto:${SITE.email}">${SITE.email}</a></span>
         <span data-lang="ko"><strong>주소.</strong> ${SITE.addressKo}</span>
         <span data-lang="en"><strong>Address.</strong> ${SITE.addressEn}</span>
