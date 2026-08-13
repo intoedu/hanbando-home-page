@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공지 · 소식 | 사단법인 한반도 양식 기술보급협회</title>
+<meta name="description" content="협회의 공지사항, 교육 일정, 행사 소식과 보도자료를 확인하세요.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%230a2942'/><path d='M12 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2' fill='none' stroke='%2317a9ad' stroke-width='4' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+<div id="header-slot"></div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <ul class="breadcrumb">
+        <li><a href="index.html"><span data-lang="ko">홈</span><span data-lang="en">Home</span></a></li>
+        <li><span data-lang="ko">공지 · 소식</span><span data-lang="en">News</span></li>
+      </ul>
+      <h1><span data-lang="ko">공지 · 소식</span><span data-lang="en">News &amp; Notice</span></h1>
+      <p>
+        <span data-lang="ko">협회의 공지사항, 교육 일정, 행사 및 활동 소식을 전해드립니다.</span>
+        <span data-lang="en">Announcements, training schedules and activity updates from the association.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+
+      <!-- 카테고리 탭 -->
+      <div class="tabs" data-tabs="#board">
+        <button class="tab is-active" data-filter="all"><span data-lang="ko">전체</span><span data-lang="en">All</span></button>
+        <button class="tab" data-filter="notice"><span data-lang="ko">공지사항</span><span data-lang="en">Notice</span></button>
+        <button class="tab" data-filter="edu"><span data-lang="ko">교육 안내</span><span data-lang="en">Training</span></button>
+        <button class="tab" data-filter="news"><span data-lang="ko">활동 소식</span><span data-lang="en">Activities</span></button>
+        <button class="tab" data-filter="press"><span data-lang="ko">보도자료</span><span data-lang="en">Press</span></button>
+      </div>
+
+      <!-- 검색 -->
+      <div class="searchbar">
+        <label class="visually-hidden" for="searchType" style="position:absolute;left:-9999px">검색 조건</label>
+        <select class="select" id="searchType" style="width:auto">
+          <option>제목</option>
+          <option>내용</option>
+          <option>제목+내용</option>
+        </select>
+        <input class="input" type="search" id="searchWord"
+               data-ko-placeholder="검색어를 입력하세요"
+               data-en-placeholder="Search keyword"
+               placeholder="검색어를 입력하세요">
+        <button class="btn btn--sm" type="button"><span data-lang="ko">검색</span><span data-lang="en">Search</span></button>
+      </div>
+
+      <!-- 게시판 -->
+      <div class="board" id="board">
+        <div class="board__row board__row--head">
+          <span><span data-lang="ko">분류</span><span data-lang="en">Category</span></span>
+          <span><span data-lang="ko">제목</span><span data-lang="en">Title</span></span>
+          <span style="text-align:center"><span data-lang="ko">등록일</span><span data-lang="en">Date</span></span>
+          <span style="text-align:center"><span data-lang="ko">조회</span><span data-lang="en">Views</span></span>
+        </div>
+
+        <div class="board__row" data-cat="notice">
+          <span class="board__cat"><span data-lang="ko">공지사항</span><span data-lang="en">Notice</span></span>
+          <a class="board__title" href="#">
+            <span class="board__badge">NEW</span>
+            <span data-lang="ko">2026년 상반기 양식 기술향상 교육 참가자 모집 안내</span>
+            <span data-lang="en">2026 H1 Aquaculture Skill Training — Call for Participants</span>
+          </a>
+          <span class="board__meta">2026-08-01</span>
+          <span class="board__meta">312</span>
+        </div>
+
+        <div class="board__row" data-cat="edu">
+          <span class="board__cat"><span data-lang="ko">교육 안내</span><span data-lang="en">Training</span></span>
+          <a class="board__title" href="#">
+            <span class="board__badge">NEW</span>
+            <span data-lang="ko">해양 안전교육 정기 과정 3분기 일정 안내</span>
+            <span data-lang="en">Marine Safety Training — Q3 Schedule</span>
+          </a>
+          <span class="board__meta">2026-07-22</span>
+          <span class="board__meta">248</span>
+        </div>
+
+        <div class="board__row" data-cat="news">
+          <span class="board__cat"><span data-lang="ko">활동 소식</span><span data-lang="en">Activities</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">해외 수산 박람회 참가 및 바이어 상담 결과 보고</span>
+            <span data-lang="en">Report: Overseas Seafood Expo &amp; Buyer Consultations</span>
+          </a>
+          <span class="board__meta">2026-07-10</span>
+          <span class="board__meta">196</span>
+        </div>
+
+        <div class="board__row" data-cat="notice">
+          <span class="board__cat"><span data-lang="ko">공지사항</span><span data-lang="en">Notice</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">협회 사무국 하계 휴무 안내</span>
+            <span data-lang="en">Summer Office Closure Notice</span>
+          </a>
+          <span class="board__meta">2026-07-02</span>
+          <span class="board__meta">140</span>
+        </div>
+
+        <div class="board__row" data-cat="edu">
+          <span class="board__cat"><span data-lang="ko">교육 안내</span><span data-lang="en">Training</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">어촌계 대상 맞춤형 출강 교육 신청 안내</span>
+            <span data-lang="en">On-site Training for Fishing Communities — How to Apply</span>
+          </a>
+          <span class="board__meta">2026-06-18</span>
+          <span class="board__meta">173</span>
+        </div>
+
+        <div class="board__row" data-cat="press">
+          <span class="board__cat"><span data-lang="ko">보도자료</span><span data-lang="en">Press</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">스마트 양식 기술 보급 성과, 지역 언론 보도</span>
+            <span data-lang="en">Smart Aquaculture Results Featured in Local Media</span>
+          </a>
+          <span class="board__meta">2026-06-05</span>
+          <span class="board__meta">221</span>
+        </div>
+
+        <div class="board__row" data-cat="news">
+          <span class="board__cat"><span data-lang="ko">활동 소식</span><span data-lang="en">Activities</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">지역 수산 기관과 업무협약(MOU) 체결</span>
+            <span data-lang="en">MOU Signed with Regional Fisheries Agency</span>
+          </a>
+          <span class="board__meta">2026-05-27</span>
+          <span class="board__meta">158</span>
+        </div>
+
+        <div class="board__row" data-cat="notice">
+          <span class="board__cat"><span data-lang="ko">공지사항</span><span data-lang="en">Notice</span></span>
+          <a class="board__title" href="#">
+            <span data-lang="ko">협회 정기총회 개최 결과 안내</span>
+            <span data-lang="en">Results of the Annual General Meeting</span>
+          </a>
+          <span class="board__meta">2026-05-12</span>
+          <span class="board__meta">134</span>
+        </div>
+      </div>
+
+      <nav class="pagination" aria-label="페이지">
+        <a href="#" aria-label="이전">‹</a>
+        <span class="is-current">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" aria-label="다음">›</a>
+      </nav>
+
+      <p class="muted center mt-4" style="font-size:14px">
+        <span data-lang="ko">※ 게시글은 관리자 페이지에서 직접 등록·수정하실 수 있도록 연동 예정입니다.</span>
+        <span data-lang="en">※ Posts will be manageable from the admin page once the board is connected.</span>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-slot"></div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

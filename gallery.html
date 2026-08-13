@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>갤러리 | 사단법인 한반도 양식 기술보급협회</title>
+<meta name="description" content="협회의 교육 현장, 기술보급 활동, 행사 사진과 영상을 만나보세요.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%230a2942'/><path d='M12 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2' fill='none' stroke='%2317a9ad' stroke-width='4' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+<div id="header-slot"></div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <ul class="breadcrumb">
+        <li><a href="index.html"><span data-lang="ko">홈</span><span data-lang="en">Home</span></a></li>
+        <li><span data-lang="ko">갤러리</span><span data-lang="en">Gallery</span></li>
+      </ul>
+      <h1><span data-lang="ko">갤러리</span><span data-lang="en">Gallery</span></h1>
+      <p>
+        <span data-lang="ko">교육 현장과 기술보급 활동, 국내외 행사의 모습을 사진과 영상으로 담았습니다.</span>
+        <span data-lang="en">Photos and videos from our training sessions, field activities and events.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 사진 갤러리 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="tabs" data-tabs="#photoGrid">
+        <button class="tab is-active" data-filter="all"><span data-lang="ko">전체</span><span data-lang="en">All</span></button>
+        <button class="tab" data-filter="edu"><span data-lang="ko">교육 현장</span><span data-lang="en">Training</span></button>
+        <button class="tab" data-filter="field"><span data-lang="ko">기술보급</span><span data-lang="en">Field</span></button>
+        <button class="tab" data-filter="event"><span data-lang="ko">행사·협약</span><span data-lang="en">Events</span></button>
+      </div>
+
+      <div class="gallery-grid" id="photoGrid">
+        <button class="gallery-item reveal" type="button" data-cat="field">
+          <img src="assets/img/gallery-1.svg" alt="양식장 현장 방문" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>양식장 현장 방문</strong><span>2026 · 기술보급</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="1" type="button" data-cat="edu">
+          <img src="assets/img/gallery-2.svg" alt="기술 보급 세미나" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>기술 보급 세미나</strong><span>2026 · 교육</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="2" type="button" data-cat="edu">
+          <img src="assets/img/gallery-3.svg" alt="해양 안전교육" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>해양 안전교육</strong><span>2026 · 교육</span></span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-cat="event">
+          <img src="assets/img/gallery-4.svg" alt="해외 바이어 상담" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>해외 바이어 상담</strong><span>2026 · 행사</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="1" type="button" data-cat="edu">
+          <img src="assets/img/gallery-5.svg" alt="실습 교육 과정" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>실습 교육 과정</strong><span>2026 · 교육</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="2" type="button" data-cat="event">
+          <img src="assets/img/gallery-6.svg" alt="수산 박람회 참가" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>수산 박람회 참가</strong><span>2026 · 행사</span></span>
+        </button>
+        <button class="gallery-item reveal" type="button" data-cat="event">
+          <img src="assets/img/gallery-7.svg" alt="협약식 체결" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>협약식 체결</strong><span>2026 · 협약</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="1" type="button" data-cat="field">
+          <img src="assets/img/gallery-8.svg" alt="양식 기자재 시연" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>양식 기자재 시연</strong><span>2026 · 기술보급</span></span>
+        </button>
+        <button class="gallery-item reveal" data-delay="2" type="button" data-cat="edu">
+          <img src="assets/img/gallery-9.svg" alt="수료식 단체사진" loading="lazy" width="1200" height="900">
+          <span class="gallery-item__overlay"><strong>수료식 단체사진</strong><span>2026 · 교육</span></span>
+        </button>
+      </div>
+
+      <div class="center mt-4">
+        <button class="btn btn--ghost" type="button">
+          <span data-lang="ko">더 보기</span><span data-lang="en">Load more</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 영상 -->
+  <section class="section section--soft" id="video">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Video</span>
+        <h2 class="h-1"><span data-lang="ko">영상 갤러리</span><span data-lang="en">Video Gallery</span></h2>
+        <p class="lead">
+          <span data-lang="ko">협회 공식 유튜브 채널의 영상입니다. 영상 주소를 알려주시면 이 자리에 연결해 드립니다.</span>
+          <span data-lang="en">Videos from our official YouTube channel. Send us the links and we will embed them here.</span>
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="video-embed reveal">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLbpi6ZahtOH6Blw3RGYpWkSByi_T7Rygb"
+                  title="협회 소개 영상" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="video-embed reveal" data-delay="1">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLbpi6ZahtOH6Blw3RGYpWkSByi_T7Rygb"
+                  title="교육 현장 영상" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-slot"></div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
