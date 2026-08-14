@@ -300,10 +300,18 @@ function initScrollUI() {
   const header = document.getElementById('siteHeader');
   const toTop = document.getElementById('toTop');
 
+  // 화면 맨 위에 읽은 만큼 채워지는 가는 막대
+  const progress = document.createElement('div');
+  progress.className = 'scroll-progress';
+  document.body.appendChild(progress);
+
   function onScroll() {
     const y = window.scrollY;
     if (header) header.classList.toggle('is-stuck', y > 8);
     if (toTop) toTop.classList.toggle('is-visible', y > 500);
+
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
