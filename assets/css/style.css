@@ -623,6 +623,14 @@ table { border-collapse: collapse; width: 100%; }
 .lightbox__nav--prev { left: 26px; top: 50%; transform: translateY(-50%); }
 .lightbox__nav--next { right: 26px; top: 50%; transform: translateY(-50%); }
 
+/* 영상 준비 중 안내 */
+.video-placeholder {
+  display: grid; place-items: center; text-align: center;
+  padding: 76px 24px; border-radius: var(--radius);
+  border: 1px dashed var(--line); background: #fff; color: var(--ink-soft);
+}
+.video-placeholder svg { width: 54px; height: 54px; color: var(--teal-600); opacity: .7; }
+
 /* 영상 */
 .video-embed {
   position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius);
