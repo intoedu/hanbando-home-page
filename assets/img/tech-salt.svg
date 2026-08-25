@@ -1,15 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="스마트 염전 · 천일염">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2942"/><stop offset="1" stop-color="#c9a94e"/></linearGradient>
-    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  </defs>
-  <rect width="1200" height="900" fill="url(#g)"/><rect width="1200" height="900" fill="url(#s)"/>
-  <g fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3">
-    <path d="M-40 620c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
-    <path d="M-40 700c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
-    <path d="M-40 780c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
-  </g>
-  <circle cx="960" cy="200" r="120" fill="#fff" fill-opacity=".08"/><circle cx="960" cy="200" r="80" fill="#fff" fill-opacity=".06"/>
-  <text x="600" y="430" text-anchor="middle" fill="#fff" fill-opacity=".92" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="52" font-weight="700">스마트 염전 · 천일염</text>
-  <text x="600" y="490" text-anchor="middle" fill="#fff" fill-opacity=".55" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" letter-spacing="4">SALT FARM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="에너지 자립형 스마트 염전" font-family="'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+<defs><linearGradient id="ws" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17a9ad" stop-opacity=".45"/><stop offset="1" stop-color="#113c60" stop-opacity=".8"/></linearGradient></defs>
+<rect width="1200" height="900" fill="#eef3f8"/>
+<text x="60" y="88" font-size="34" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">에너지 자립형 스마트 염전</text>
+<text x="60" y="122" font-size="19" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">심층염지하수 저온 농축 · 태양광 · 풍력 · ESS</text>
+<path d="M0,470 L1200,470 L1200,900 L0,900 Z" fill="#d4dfe9"/>
+<path d="M0,470 L1200,470" stroke="#adbecd" stroke-width="3"/>
+<path d="M0,540 C340,526 780,554 1200,534" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
+<path d="M0,620 C340,606 780,634 1200,614" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
+<path d="M0,700 C340,686 780,714 1200,694" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
+<path d="M0,780 C340,766 780,794 1200,774" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
+<path d="M0,860 C340,846 780,874 1200,854" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
+<path d="M108,470 L108,262" stroke="#0a2942" stroke-width="6"/><g transform="translate(108,262)" stroke="#0a2942" stroke-width="7" stroke-linecap="round"><path d="M0,0 L0,-74"/><path d="M0,0 L64,38"/><path d="M0,0 L-64,38"/></g><circle cx="108" cy="262" r="9" fill="#b8912f"/><text x="108" y="168" font-size="18" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">풍력 발전</text>
+<g transform="translate(300,400) skewX(-16)"><rect x="0" y="0" width="96" height="58" rx="4" fill="#113c60" stroke="#0a2942" stroke-width="3"/><path d="M0,19 H96 M0,38 H96 M32,0 V58 M64,0 V58" stroke="#17a9ad" stroke-width="2" opacity=".7"/></g><path d="M330,458 L330,470" stroke="#0a2942" stroke-width="5"/><g transform="translate(418,400) skewX(-16)"><rect x="0" y="0" width="96" height="58" rx="4" fill="#113c60" stroke="#0a2942" stroke-width="3"/><path d="M0,19 H96 M0,38 H96 M32,0 V58 M64,0 V58" stroke="#17a9ad" stroke-width="2" opacity=".7"/></g><path d="M448,458 L448,470" stroke="#0a2942" stroke-width="5"/><g transform="translate(536,400) skewX(-16)"><rect x="0" y="0" width="96" height="58" rx="4" fill="#113c60" stroke="#0a2942" stroke-width="3"/><path d="M0,19 H96 M0,38 H96 M32,0 V58 M64,0 V58" stroke="#17a9ad" stroke-width="2" opacity=".7"/></g><path d="M566,458 L566,470" stroke="#0a2942" stroke-width="5"/><text x="478" y="348" font-size="18" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">태양광 발전</text>
+<rect x="700" y="362" width="150" height="100" rx="8" fill="#ffffff" stroke="#0a2942" stroke-width="4"/><rect x="716" y="380" width="118" height="20" rx="3" fill="#17a9ad"/><rect x="716" y="406" width="90" height="20" rx="3" fill="#0e8a91"/><rect x="716" y="432" width="60" height="20" rx="3" fill="#adbecd"/><text x="775" y="348" font-size="18" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">ESS 저장</text>
+<rect x="900" y="340" width="230" height="122" rx="10" fill="#ffffff" stroke="#0a2942" stroke-width="4"/><text x="1015" y="378" font-size="22" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">저온 농축</text>
+<text x="1015" y="406" font-size="22" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">플랜트</text>
+<text x="1015" y="436" font-size="16" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">미네랄 손상 최소화</text>
+<g transform="translate(300,510)"><path d="M0,0 L130,0 L112,52 L18,52 Z" fill="url(#ws)" stroke="#0a2942" stroke-width="3"/><path d="M14,40 L116,40" stroke="#ffffff" stroke-width="3" opacity=".6"/></g><g transform="translate(450,510)"><path d="M0,0 L130,0 L112,52 L18,52 Z" fill="url(#ws)" stroke="#0a2942" stroke-width="3"/><path d="M14,40 L116,40" stroke="#ffffff" stroke-width="3" opacity=".6"/></g><g transform="translate(600,510)"><path d="M0,0 L130,0 L112,52 L18,52 Z" fill="url(#ws)" stroke="#0a2942" stroke-width="3"/><path d="M14,40 L116,40" stroke="#ffffff" stroke-width="3" opacity=".6"/></g><g transform="translate(750,510)"><path d="M0,0 L130,0 L112,52 L18,52 Z" fill="url(#ws)" stroke="#0a2942" stroke-width="3"/><path d="M14,40 L116,40" stroke="#ffffff" stroke-width="3" opacity=".6"/></g><text x="600" y="592" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">관리형 결정지 · 날씨와 무관한 균일 생산</text>
+<path d="M268,470 L268,840" stroke="#0a2942" stroke-width="14" stroke-linecap="round"/><path d="M268,470 L268,840" stroke="#17a9ad" stroke-width="6" stroke-linecap="round"/><circle cx="268" cy="845" r="16" fill="#0a2942"/><path d="M268,820 L268.0,634.0" stroke="#17a9ad" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M268,620 L276.0,634.0 L260.0,634.0 z" fill="#17a9ad"/>
+<path d="M171,470 L185,470 M171,840 L185,840" stroke="#0a2942" stroke-width="1.6"/><path d="M178,470 L178,840" stroke="#0a2942" stroke-width="1.4"/><path d="M178,470 l-5,10 h10 z M178,840 l-5,-10 h10 z" fill="#0a2942"/>
+<rect x="118" y="639.0" width="120" height="32" rx="5" fill="#eef3f8"/><text x="178" y="662.0" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">지하 900m</text>
+<text x="314" y="806" font-size="20" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">심층염지하수 취수</text>
+<text x="314" y="834" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">해양 오염원과 차단된 청정 원수</text>
+<path d="M0,760 C260,742 620,782 1200,752 L1200,900 L0,900 Z" fill="#113c60" opacity=".22"/><text x="1010" y="762" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">지하 염수층</text>
 </svg>

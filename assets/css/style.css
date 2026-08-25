@@ -1242,6 +1242,16 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   color: var(--gold-500); opacity: 0.28; pointer-events: none;
 }
 
+/* --- 19-C-7B. 전체 폭 기술 도면 --------------------------- */
+/* 도면은 가로로 길게 보여야 라벨과 치수가 읽힙니다 */
+.figure--wide { border-radius: var(--radius); background: #eef3f8; }
+.figure--wide img {
+  width: 100%; aspect-ratio: auto; height: auto;
+  object-fit: contain;
+}
+.figure--wide::after { display: none; }
+.figure--wide:hover img { transform: none; }
+
 /* --- 19-C-8. 표 : 줄무늬와 강조 --------------------------- */
 .info-table tbody tr:nth-child(odd) td { background: rgba(245, 248, 251, 0.6); }
 .info-table td strong { color: var(--navy-800); }
