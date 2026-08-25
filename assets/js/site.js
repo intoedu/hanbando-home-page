@@ -7,7 +7,7 @@
  *   3) 한국어 / 영어 전환
  *   4) 모바일 메뉴, 아코디언(FAQ), 갤러리 라이트박스
  *   5) 숫자 카운트업, 스크롤 등장 효과, 맨 위로 버튼
- *   6) 문의·신청 폼 유효성 검사
+ *   6) 게시판 검색 (문의·신청은 전화·문자로 받습니다)
  * ========================================================================= */
 
 /* =========================================================
@@ -442,109 +442,36 @@ function initLightbox() {
 }
 
 /* =========================================================
- * 13. 문의 · 신청 양식
+ * 13. 문의 · 신청 접수 방식
  * ---------------------------------------------------------
- *   외부 서비스(서버, Formspree 등)를 쓰지 않습니다.
- *   [보내기]를 누르면 작성한 내용이 메일 앱에 자동으로 채워진 채 열리고,
- *   메일 앱이 없는 분을 위해 [내용 복사] 버튼도 함께 제공합니다.
- *   받는 주소를 바꾸려면 맨 위 SITE.email 만 고치면 됩니다.
+ *   현재는 온라인 양식을 쓰지 않습니다.
+ *   문의 · 신청 · 후원 모두 전화와 문자로 받고 있으며,
+ *   각 페이지의 <a href="tel:..."> / <a href="sms:..."> 버튼이
+ *   방문자의 통화 · 메시지 앱을 바로 엽니다. 별도 스크립트가 필요 없습니다.
+ *
+ *   ── 나중에 온라인 접수를 붙이고 싶다면 ──────────────────
+ *   신청 내역을 표로 쌓아 관리하려면 저장할 곳이 필요합니다.
+ *   Supabase를 붙일 경우 아래 형태로 이 자리에 추가하면 됩니다.
+ *
+ *   const SUPABASE_URL = '프로젝트 주소';
+ *   const SUPABASE_KEY = '공개 키(anon key)';
+ *
+ *   function submitToSupabase(table, data) {
+ *     return fetch(SUPABASE_URL + '/rest/v1/' + table, {
+ *       method: 'POST',
+ *       headers: {
+ *         'Content-Type': 'application/json',
+ *         apikey: SUPABASE_KEY,
+ *         Authorization: 'Bearer ' + SUPABASE_KEY
+ *       },
+ *       body: JSON.stringify(data)
+ *     });
+ *   }
+ *
+ *   그리고 각 페이지에 <form> 을 되살린 뒤 submit 이벤트에서 호출합니다.
+ *   ※ 공개 키는 브라우저에 노출되므로, Supabase 쪽에서 RLS(행 수준 보안)로
+ *     '쓰기만 허용, 읽기 금지' 정책을 반드시 걸어야 합니다.
  * ========================================================= */
-
-/* 입력 값을 읽어 보기 좋은 텍스트로 정리 */
-function collectForm(form) {
-  const lines = [];
-  form.querySelectorAll('.field').forEach(function (field) {
-    const labelEl = field.querySelector('.field__label');
-    if (!labelEl) return;
-    const koLabel = labelEl.querySelector('[data-lang="ko"]');
-    const label = (koLabel ? koLabel.textContent : labelEl.textContent)
-      .replace('*', '').trim();
-
-    const radio = field.querySelector('input[type="radio"]:checked');
-    const check = field.querySelector('input[type="checkbox"]');
-    const input = field.querySelector('.input, .select, .textarea');
-
-    const parts = [];
-    if (radio) parts.push(radio.value);
-    if (input && input.value.trim()) parts.push(input.value.trim());  // 직접 입력란 등
-    if (!radio && !input && check) parts.push(check.checked ? '동의함' : '동의하지 않음');
-
-    if (parts.length) lines.push(label + ' : ' + parts.join(' / '));
-  });
-  return lines.join('\n');
-}
-
-function initForms() {
-  document.querySelectorAll('form[data-validate]').forEach(function (form) {
-    const note = form.querySelector('.form-note');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const lang = document.documentElement.getAttribute('lang');
-      let invalid = null;
-
-      form.querySelectorAll('[required]').forEach(function (field) {
-        if (invalid) return;
-        const empty = field.type === 'checkbox' ? !field.checked : !field.value.trim();
-        if (empty) invalid = field;
-      });
-
-      const emailField = form.querySelector('input[type="email"]');
-      if (!invalid && emailField && emailField.value.trim()) {
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim())) invalid = emailField;
-      }
-
-      if (invalid) {
-        if (note) {
-          note.className = 'form-note form-note--error is-visible';
-          note.textContent = lang === 'en'
-            ? 'Please complete all required fields correctly.'
-            : '필수 항목을 모두 올바르게 입력해 주세요.';
-        }
-        invalid.focus();
-        invalid.scrollIntoView({ block: 'center', behavior: 'smooth' });
-        return;
-      }
-
-      const subject = (form.dataset.subject || '홈페이지 문의') + ' (' + new Date().toLocaleDateString('ko-KR') + ')';
-      const body = collectForm(form);
-
-      // 1) 메일 앱 열기
-      window.location.href = 'mailto:' + SITE.email +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
-
-      // 2) 메일 앱이 없을 때를 위한 복사 안내
-      if (note) {
-        note.className = 'form-note is-visible';
-        note.innerHTML = lang === 'en'
-          ? 'Your mail app should open with the message filled in. If it does not, ' +
-            '<button type="button" class="form-note__copy">copy the text</button> ' +
-            'and send it to ' + SITE.email + '.'
-          : '메일 앱이 열리면 그대로 보내주세요. 메일 앱이 열리지 않으면 ' +
-            '<button type="button" class="form-note__copy">내용 복사</button> 를 눌러 ' +
-            SITE.email + ' 으로 보내주시거나, ' + SITE.tel + ' 로 전화 주셔도 됩니다.';
-
-        const copyBtn = note.querySelector('.form-note__copy');
-        if (copyBtn) {
-          copyBtn.addEventListener('click', function () {
-            const text = subject + '\n\n' + body;
-            if (navigator.clipboard) {
-              navigator.clipboard.writeText(text).then(function () {
-                copyBtn.textContent = '복사했습니다';
-              });
-            } else {
-              const ta = document.createElement('textarea');
-              ta.value = text; document.body.appendChild(ta);
-              ta.select(); document.execCommand('copy'); ta.remove();
-              copyBtn.textContent = '복사했습니다';
-            }
-          });
-        }
-      }
-    });
-  });
-}
 
 /* =========================================================
  * 13-B. 게시판 검색 (브라우저 안에서 바로 걸러냅니다)
@@ -590,6 +517,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initAccordion();
   initTabs();
   initLightbox();
-  initForms();
   initBoardSearch();
 });

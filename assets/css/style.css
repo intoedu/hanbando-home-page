@@ -1321,6 +1321,71 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   flex: none; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums;
 }
 
+/* --- 연락 수단 큰 버튼 ------------------------------------ */
+.contact-actions { display: grid; gap: 16px; }
+.contact-action {
+  display: flex; align-items: center; gap: 20px;
+  padding: 26px 28px; border-radius: var(--radius);
+  border: 1px solid var(--line); background: #fff;
+  transition: border-color 0.22s var(--ease), box-shadow 0.22s var(--ease), transform 0.22s var(--ease);
+}
+.contact-action:hover {
+  border-color: var(--teal-500); box-shadow: var(--shadow); transform: translateY(-2px);
+}
+.contact-action__icon {
+  width: 56px; height: 56px; flex: none; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--teal-100); color: var(--teal-700);
+}
+.contact-action__icon svg { width: 25px; height: 25px; }
+.contact-action__body { flex: 1; min-width: 0; }
+.contact-action__label { font-size: 14px; font-weight: 700; color: var(--muted); }
+.contact-action__value {
+  display: block; margin-top: 2px;
+  font-size: clamp(22px, 2.4vw, 29px); font-weight: 800;
+  color: var(--navy-800); letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+}
+.contact-action__note { margin-top: 4px; font-size: 14px; color: var(--muted); }
+.contact-action__go {
+  flex: none; font-size: 14px; font-weight: 700; color: var(--teal-700);
+  white-space: nowrap;
+}
+
+/* 대표 연락 수단 강조 */
+.contact-action--primary {
+  background: var(--navy-800); border-color: var(--navy-800); color: #fff;
+}
+.contact-action--primary .contact-action__icon { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.contact-action--primary .contact-action__label { color: rgba(255, 255, 255, 0.6); }
+.contact-action--primary .contact-action__value { color: #fff; }
+.contact-action--primary .contact-action__note { color: rgba(255, 255, 255, 0.62); }
+.contact-action--primary .contact-action__go { color: var(--gold-500); }
+.contact-action--primary:hover { border-color: var(--teal-500); }
+
+/* 문자 버튼은 휴대전화에서만 의미가 있어 데스크톱에서는 안내 문구를 바꿔 표시 */
+.only-mobile { display: none; }
+@media (max-width: 760px) {
+  .only-mobile { display: inline; }
+  .no-mobile { display: none; }
+  .contact-action { padding: 20px 18px; gap: 15px; }
+  .contact-action__icon { width: 48px; height: 48px; }
+  .contact-action__go { display: none; }
+}
+
+/* --- 신청 시 알려주실 내용 체크리스트 --------------------- */
+.checklist { display: grid; gap: 14px; }
+.checklist li {
+  display: flex; gap: 13px; align-items: flex-start;
+  font-size: 15.5px; color: var(--ink-soft);
+}
+.checklist li::before {
+  content: ""; flex: none; width: 22px; height: 22px; margin-top: 2px;
+  border-radius: 50%; background: var(--teal-100);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%230b6a73' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 12 6 6L20 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: center;
+}
+.checklist strong { color: var(--navy-800); font-weight: 700; }
+
 /* --- 공지 + 연락처 2단 ------------------------------------ */
 .split--news {
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
