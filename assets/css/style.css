@@ -1252,6 +1252,93 @@ html[lang="ko"] [data-lang="en"] { display: none; }
 .figure--wide::after { display: none; }
 .figure--wide:hover img { transform: none; }
 
+/* =========================================================
+   19-D. 메인 구성 요소 (바로가기 · 공지 · 연락 카드)
+   ========================================================= */
+
+/* --- 바로가기 바 : 히어로 아래 4개 단축 링크 -------------- */
+.quicklinks {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fff; box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.quicklink {
+  display: flex; align-items: center; gap: 16px;
+  padding: 28px 26px; position: relative;
+  transition: background 0.25s var(--ease);
+}
+.quicklink + .quicklink { border-left: 1px solid var(--line); }
+.quicklink:hover { background: var(--bg-soft); }
+.quicklink__icon {
+  width: 46px; height: 46px; flex: none; display: grid; place-items: center;
+  border-radius: 50%; background: var(--teal-100); color: var(--teal-700);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+.quicklink:hover .quicklink__icon { background: var(--teal-600); color: #fff; }
+.quicklink__icon svg { width: 22px; height: 22px; }
+.quicklink__text { display: flex; flex-direction: column; line-height: 1.4; min-width: 0; }
+.quicklink__text strong { font-size: 16.5px; color: var(--navy-800); letter-spacing: -0.02em; }
+.quicklink__text span { font-size: 13.5px; color: var(--muted); }
+.quicklink::after {
+  content: "→"; position: absolute; right: 22px; top: 50%; transform: translateY(-50%);
+  color: var(--line); font-size: 17px; transition: color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.quicklink:hover::after { color: var(--teal-600); transform: translateY(-50%) translateX(3px); }
+
+/* 히어로에 살짝 걸치도록 */
+.quicklinks-wrap { margin-top: -46px; position: relative; z-index: 5; }
+
+/* --- 공지 목록 (텍스트 라인형) ---------------------------- */
+.notice-list { border-top: 2px solid var(--navy-800); }
+.notice-list__row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 6px; border-bottom: 1px solid var(--line);
+  transition: background 0.2s var(--ease);
+}
+.notice-list__row:hover { background: var(--bg-soft); }
+.notice-list__cat {
+  flex: none; min-width: 64px; text-align: center; padding: 4px 10px; border-radius: 3px;
+  background: var(--teal-100); color: var(--teal-700);
+  font-size: 12.5px; font-weight: 800;
+}
+.notice-list__cat--gold { background: var(--gold-100); color: var(--gold-600); }
+.notice-list__cat--gray { background: var(--bg-deep); color: var(--muted); }
+.notice-list__title {
+  flex: 1; min-width: 0; font-size: 16px; font-weight: 600; color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.notice-list__row:hover .notice-list__title { color: var(--teal-700); }
+.notice-list__date {
+  flex: none; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums;
+}
+
+/* --- 공지 + 연락처 2단 ------------------------------------ */
+.split--news {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 46px;
+}
+
+/* --- 연락 요약 카드 --------------------------------------- */
+.info-card {
+  background: var(--navy-800); color: #fff; border-radius: var(--radius);
+  padding: 32px 30px; position: relative; overflow: hidden; height: 100%;
+}
+.info-card::after {
+  content: ""; position: absolute; right: -70px; bottom: -90px;
+  width: 220px; height: 220px; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 24px rgba(255, 255, 255, 0.04);
+}
+.info-card h3 { font-size: 20px; }
+.info-card__list { margin-top: 22px; display: grid; gap: 16px; position: relative; z-index: 1; }
+.info-card__item { display: flex; gap: 13px; align-items: flex-start; }
+.info-card__item svg { width: 19px; height: 19px; flex: none; margin-top: 3px; color: var(--teal-500); }
+.info-card__item dt { font-size: 12.5px; color: rgba(255, 255, 255, 0.55); }
+.info-card__item dd { margin: 2px 0 0; font-size: 15.5px; font-weight: 600; line-height: 1.55; }
+.info-card .btn { margin-top: 26px; position: relative; z-index: 1; }
+
 /* --- 19-C-8. 표 : 줄무늬와 강조 --------------------------- */
 .info-table tbody tr:nth-child(odd) td { background: rgba(245, 248, 251, 0.6); }
 .info-table td strong { color: var(--navy-800); }
@@ -1347,10 +1434,13 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   :root { --header-h: 72px; }
   .hero__inner { grid-template-columns: 1fr; gap: 44px; padding: 76px 0 90px; }
   .hero__panel { max-width: 520px; }
-  .split, .split--narrow-left { grid-template-columns: 1fr; gap: 40px; }
+  .split, .split--narrow-left, .split--news { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .logo-strip { grid-template-columns: repeat(3, 1fr); }
+  .quicklinks { grid-template-columns: repeat(2, 1fr); }
+  .quicklink:nth-child(3) { border-left: 0; }
+  .quicklink:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .section { padding: 84px 0; }
 
   .topbar { display: none; }
@@ -1385,6 +1475,9 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .logo-strip { grid-template-columns: repeat(2, 1fr); }
+  .quicklinks { grid-template-columns: 1fr; }
+  .quicklink + .quicklink { border-left: 0; border-top: 1px solid var(--line); }
+  .quicklinks-wrap { margin-top: 0; }
   .hero-stats__grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats__item:nth-child(3) { border-left: 0; }
   .hero-stats__item:nth-child(n + 3) { border-top: 1px solid rgba(255, 255, 255, 0.12); }
