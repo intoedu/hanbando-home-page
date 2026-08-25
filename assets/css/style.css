@@ -77,7 +77,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.72;
   color: var(--ink);
   background: var(--bg);
   letter-spacing: -0.01em;
@@ -98,9 +98,10 @@ table { border-collapse: collapse; width: 100%; }
 ::selection { background: var(--teal-500); color: #fff; }
 
 :focus-visible {
-  outline: 3px solid var(--teal-500);
+  outline: 2px solid var(--teal-600);
   outline-offset: 3px;
   border-radius: 4px;
+  box-shadow: 0 0 0 5px rgba(23, 169, 173, 0.18);
 }
 
 /* 건너뛰기 링크 (접근성) */
@@ -134,6 +135,12 @@ table { border-collapse: collapse; width: 100%; }
 .mt-4 { margin-top: 48px; }
 .mt-5 { margin-top: 72px; }
 
+/* 본문 크기 유틸 (인라인 style 대신 사용) */
+.fs-sm  { font-size: 14.5px; }
+.fs-xs  { font-size: 13.5px; }
+.text-soft { color: var(--ink-soft); }
+.pad-lg { padding: 32px 30px; }
+
 /* =========================================================
    4. 타이포 컴포넌트
    ========================================================= */
@@ -149,12 +156,12 @@ table { border-collapse: collapse; width: 100%; }
 }
 .section--deep .eyebrow { color: var(--teal-500); }
 
-.h-display { font-size: clamp(34px, 5vw, 60px); line-height: 1.22; letter-spacing: -0.035em; }
-.h-1 { font-size: clamp(28px, 3.6vw, 42px); }
-.h-2 { font-size: clamp(24px, 2.6vw, 32px); }
+.h-display { font-size: clamp(34px, 5vw, 58px); line-height: 1.18; letter-spacing: -0.042em; }
+.h-1 { font-size: clamp(27px, 3.4vw, 40px); letter-spacing: -0.032em; }
+.h-2 { font-size: clamp(23px, 2.5vw, 30px); letter-spacing: -0.03em; }
 .h-3 { font-size: clamp(19px, 1.6vw, 22px); }
 
-.lead { font-size: clamp(16px, 1.35vw, 18px); color: var(--ink-soft); line-height: 1.85; }
+.lead { font-size: clamp(16px, 1.3vw, 17.5px); color: var(--ink-soft); line-height: 1.8; }
 .muted { color: var(--muted); }
 .section--deep .lead,
 .section--deep .muted { color: rgba(255, 255, 255, 0.76); }
@@ -177,7 +184,7 @@ table { border-collapse: collapse; width: 100%; }
   --btn-bg: var(--navy-800);
   --btn-fg: #fff;
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 15px 30px; border: 1px solid transparent; border-radius: 999px;
+  padding: 15px 30px; border: 1px solid transparent; border-radius: 8px;
   background: var(--btn-bg); color: var(--btn-fg);
   font-size: 15px; font-weight: 700; letter-spacing: -0.02em;
   transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease);
@@ -392,6 +399,10 @@ table { border-collapse: collapse; width: 100%; }
     radial-gradient(760px 420px at 80% 0%, rgba(23, 169, 173, 0.34), transparent 62%),
     linear-gradient(140deg, var(--navy-900), var(--navy-700));
   padding: 78px 0 66px;
+}
+.page-hero::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; z-index: 2;
+  background: linear-gradient(90deg, var(--teal-600), var(--gold-500), var(--teal-600));
 }
 .page-hero::after {
   content: ""; position: absolute; right: -80px; bottom: -140px;
@@ -1321,55 +1332,60 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   flex: none; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums;
 }
 
-/* --- 연락 수단 큰 버튼 ------------------------------------ */
-.contact-actions { display: grid; gap: 16px; }
-.contact-action {
-  display: flex; align-items: center; gap: 20px;
-  padding: 26px 28px; border-radius: var(--radius);
+/* --- 연락 수단 카드 --------------------------------------- */
+.contact-actions { display: grid; gap: 14px; }
+
+.contact-row {
+  display: flex; align-items: center; gap: 22px;
+  padding: 24px 26px; border-radius: var(--radius);
   border: 1px solid var(--line); background: #fff;
-  transition: border-color 0.22s var(--ease), box-shadow 0.22s var(--ease), transform 0.22s var(--ease);
+  box-shadow: 0 1px 2px rgba(6, 23, 38, 0.04);
+  transition: border-color 0.22s var(--ease), box-shadow 0.22s var(--ease);
 }
-.contact-action:hover {
-  border-color: var(--teal-500); box-shadow: var(--shadow); transform: translateY(-2px);
-}
-.contact-action__icon {
-  width: 56px; height: 56px; flex: none; border-radius: 50%;
+.contact-row:hover { border-color: #c6d5e2; box-shadow: var(--shadow-sm); }
+
+.contact-row__icon {
+  width: 52px; height: 52px; flex: none; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--teal-100); color: var(--teal-700);
 }
-.contact-action__icon svg { width: 25px; height: 25px; }
-.contact-action__body { flex: 1; min-width: 0; }
-.contact-action__label { font-size: 14px; font-weight: 700; color: var(--muted); }
-.contact-action__value {
-  display: block; margin-top: 2px;
-  font-size: clamp(22px, 2.4vw, 29px); font-weight: 800;
-  color: var(--navy-800); letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+.contact-row__icon svg { width: 23px; height: 23px; }
+
+.contact-row__body { flex: 1; min-width: 0; }
+.contact-row__label {
+  display: block; font-size: 13px; font-weight: 700;
+  color: var(--muted); letter-spacing: 0.02em;
 }
-.contact-action__note { margin-top: 4px; font-size: 14px; color: var(--muted); }
-.contact-action__go {
-  flex: none; font-size: 14px; font-weight: 700; color: var(--teal-700);
-  white-space: nowrap;
+.contact-row__value {
+  display: block; margin-top: 3px;
+  font-size: clamp(21px, 2.3vw, 28px); font-weight: 800;
+  color: var(--navy-800); letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums; line-height: 1.25;
 }
+.contact-row__value--sm { font-size: clamp(17px, 1.9vw, 22px); letter-spacing: -0.02em; }
+.contact-row__note { display: block; margin-top: 5px; font-size: 14px; color: var(--muted); }
+
+.contact-row__actions { flex: none; display: flex; gap: 8px; }
+.contact-row__actions .btn { padding: 11px 20px; font-size: 14px; }
 
 /* 대표 연락 수단 강조 */
-.contact-action--primary {
-  background: var(--navy-800); border-color: var(--navy-800); color: #fff;
+.contact-row--primary {
+  background: var(--navy-800); border-color: var(--navy-800);
+  box-shadow: 0 10px 26px rgba(10, 41, 66, 0.18);
 }
-.contact-action--primary .contact-action__icon { background: rgba(255, 255, 255, 0.14); color: #fff; }
-.contact-action--primary .contact-action__label { color: rgba(255, 255, 255, 0.6); }
-.contact-action--primary .contact-action__value { color: #fff; }
-.contact-action--primary .contact-action__note { color: rgba(255, 255, 255, 0.62); }
-.contact-action--primary .contact-action__go { color: var(--gold-500); }
-.contact-action--primary:hover { border-color: var(--teal-500); }
+.contact-row--primary:hover { border-color: var(--teal-600); }
+.contact-row--primary .contact-row__icon { background: rgba(255, 255, 255, 0.13); color: #fff; }
+.contact-row--primary .contact-row__label { color: rgba(255, 255, 255, 0.58); }
+.contact-row--primary .contact-row__value { color: #fff; }
+.contact-row--primary .contact-row__note { color: rgba(255, 255, 255, 0.62); }
 
-/* 문자 버튼은 휴대전화에서만 의미가 있어 데스크톱에서는 안내 문구를 바꿔 표시 */
-.only-mobile { display: none; }
 @media (max-width: 760px) {
-  .only-mobile { display: inline; }
-  .no-mobile { display: none; }
-  .contact-action { padding: 20px 18px; gap: 15px; }
-  .contact-action__icon { width: 48px; height: 48px; }
-  .contact-action__go { display: none; }
+  .contact-row {
+    flex-wrap: wrap; padding: 20px 18px; gap: 14px;
+  }
+  .contact-row__body { flex: 1 1 auto; }
+  .contact-row__actions { flex: 1 1 100%; }
+  .contact-row__actions .btn { flex: 1; }
 }
 
 /* --- 신청 시 알려주실 내용 체크리스트 --------------------- */
