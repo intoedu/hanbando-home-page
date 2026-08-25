@@ -1388,6 +1388,38 @@ html[lang="ko"] [data-lang="en"] { display: none; }
   .contact-row__actions .btn { flex: 1; }
 }
 
+/* --- 등록 증서 카드 --------------------------------------- */
+.doc-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;
+}
+.doc-card {
+  display: block; width: 100%; padding: 0; text-align: left; cursor: pointer;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; box-shadow: 0 1px 2px rgba(6, 23, 38, 0.04);
+  transition: border-color 0.22s var(--ease), box-shadow 0.22s var(--ease), transform 0.22s var(--ease);
+}
+.doc-card:hover {
+  border-color: var(--teal-500); box-shadow: var(--shadow); transform: translateY(-3px);
+}
+.doc-card img {
+  width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top center;
+  background: var(--bg-deep); border-bottom: 1px solid var(--line);
+}
+.doc-card__meta { display: block; padding: 16px 18px 18px; }
+.doc-card__meta strong {
+  display: block; font-size: 14.5px; font-weight: 800; color: var(--navy-800);
+  font-variant-numeric: tabular-nums; letter-spacing: -0.02em;
+}
+.doc-card__meta span {
+  display: block; margin-top: 5px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.55;
+}
+.doc-card__meta em {
+  display: block; margin-top: 7px; font-style: normal;
+  font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums;
+}
+@media (max-width: 1024px) { .doc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px)  { .doc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+
 /* --- 신청 시 알려주실 내용 체크리스트 --------------------- */
 .checklist { display: grid; gap: 14px; }
 .checklist li {
