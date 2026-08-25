@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="먹는 염지하수와 해양심층수">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2942"/><stop offset="1" stop-color="#17a9ad"/></linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/><rect width="1200" height="900" fill="url(#s)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3">
+    <path d="M-40 620c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
+    <path d="M-40 700c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
+    <path d="M-40 780c90-70 180-70 270 0s180 70 270 0 180-70 270 0 180 70 270 0 180-70 270 0"/>
+  </g>
+  <circle cx="960" cy="200" r="120" fill="#fff" fill-opacity=".08"/><circle cx="960" cy="200" r="80" fill="#fff" fill-opacity=".06"/>
+  <text x="600" y="430" text-anchor="middle" fill="#fff" fill-opacity=".92" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="48" font-weight="700">먹는 염지하수와 해양심층수</text>
+  <text x="600" y="490" text-anchor="middle" fill="#fff" fill-opacity=".55" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" letter-spacing="4">DEEP BRINE</text>
+</svg>
