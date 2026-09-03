@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="터널형 양식장 길이 방향 단면" font-family="'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
-<defs><linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17a9ad" stop-opacity=".5"/><stop offset="1" stop-color="#113c60" stop-opacity=".85"/></linearGradient><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f0f7"/><stop offset="1" stop-color="#eef3f8"/></linearGradient></defs>
+<defs><linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b8b90" stop-opacity=".5"/><stop offset="1" stop-color="#1d4356" stop-opacity=".85"/></linearGradient><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf7f0"/><stop offset="1" stop-color="#f4f1ea"/></linearGradient></defs>
 <rect width="1200" height="900" fill="url(#sky)"/>
-<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286 L1200,900 L0,900 Z" fill="#d4dfe9"/>
-<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286" fill="none" stroke="#adbecd" stroke-width="3"/>
-<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286 L1200,308 C1080,322 960,354 800,322 C640,290 560,182 380,197 C210,212 140,322 0,352 Z" fill="#9fb8a4" opacity=".5"/>
-<path d="M0,420 C320,404 760,436 1200,414" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M0,506 C320,490 760,522 1200,500" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M0,592 C320,576 760,608 1200,586" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M0,678 C320,662 760,694 1200,672" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M0,764 C320,748 760,780 1200,758" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M0,850 C320,834 760,866 1200,844" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M120,720 L120,560 A110,60 0 0 1 230,500 L970,500 A110,60 0 0 1 1080,560 L1080,720 Z" fill="#ffffff" stroke="#0a2942" stroke-width="9"/>
-<clipPath id="ct"><path d="M120,720 L120,560 A110,60 0 0 1 230,500 L970,500 A110,60 0 0 1 1080,560 L1080,720 Z"/></clipPath><g clip-path="url(#ct)"><rect x="120" y="570" width="960" height="220" fill="url(#w3)"/><path d="M120,572 C300,562 700,584 1080,568" fill="none" stroke="#ffffff" stroke-width="3" opacity=".6"/><g transform="translate(260,630) scale(1.1)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(430,672) scale(0.85)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(600,610) scale(0.95)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(760,660) scale(1.0)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(920,620) scale(0.8)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(520,700) scale(0.7)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(860,700) scale(0.75)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(600,570)"><path d="M-70,0 L70,0 L52,30 L-52,30 Z" fill="#0a2942"/><rect x="-24" y="-30" width="48" height="30" rx="4" fill="#ffffff" stroke="#0a2942" stroke-width="4"/><path d="M0,-30 L0,-56" stroke="#0a2942" stroke-width="4"/><circle cx="0" cy="-58" r="5" fill="#b8912f"/></g></g>
-<text x="600" y="466" font-size="20" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">내부에서 선박 조업이 가능한 규모</text>
-<path d="M120,793 L120,807 M1080,793 L1080,807" stroke="#0a2942" stroke-width="1.6"/><path d="M120,800 L1080,800" stroke="#0a2942" stroke-width="1.4"/><path d="M120,800 l10,-5 v10 z M1080,800 l-10,-5 v10 z" fill="#0a2942"/>
-<rect x="495" y="784" width="210" height="32" rx="5" fill="#eef3f8"/><text x="600.0" y="807" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">터널 길이 200~300m</text>
-<rect x="60" y="120" width="290" height="112" rx="10" fill="#ffffff" stroke="#adbecd" stroke-width="2"/><text x="80" y="158" font-size="22" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">지하 암반층</text>
-<text x="80" y="190" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">외부 기후와 완전히 차단</text>
-<text x="80" y="214" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">고수온 · 적조 · 태풍 영향 없음</text>
-<rect x="890" y="120" width="250" height="112" rx="10" fill="#ffffff" stroke="#adbecd" stroke-width="2"/><text x="910" y="158" font-size="22" fill="#0e8a91" font-weight="800" text-anchor="start" letter-spacing="0">연중 14~15℃</text>
-<text x="910" y="190" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">지중열로 수온 유지</text>
-<text x="910" y="214" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">냉·난방 부하 최소</text>
-<text x="60" y="92" font-size="34" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">터널형 스마트 양식장</text>
+<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286 L1200,900 L0,900 Z" fill="#ded7c9"/>
+<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286" fill="none" stroke="#b8ad98" stroke-width="3"/>
+<path d="M0,330 C140,300 210,190 380,175 C560,160 640,268 800,300 C960,332 1080,300 1200,286 L1200,308 C1080,322 960,354 800,322 C640,290 560,182 380,197 C210,212 140,322 0,352 Z" fill="#9aa88f" opacity=".5"/>
+<path d="M0,420 C320,404 760,436 1200,414" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M0,506 C320,490 760,522 1200,500" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M0,592 C320,576 760,608 1200,586" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M0,678 C320,662 760,694 1200,672" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M0,764 C320,748 760,780 1200,758" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M0,850 C320,834 760,866 1200,844" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M120,720 L120,560 A110,60 0 0 1 230,500 L970,500 A110,60 0 0 1 1080,560 L1080,720 Z" fill="#ffffff" stroke="#0b1a24" stroke-width="9"/>
+<clipPath id="ct"><path d="M120,720 L120,560 A110,60 0 0 1 230,500 L970,500 A110,60 0 0 1 1080,560 L1080,720 Z"/></clipPath><g clip-path="url(#ct)"><rect x="120" y="570" width="960" height="220" fill="url(#w3)"/><path d="M120,572 C300,562 700,584 1080,568" fill="none" stroke="#ffffff" stroke-width="3" opacity=".6"/><g transform="translate(260,630) scale(1.1)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(430,672) scale(0.85)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(600,610) scale(0.95)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(760,660) scale(1.0)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(920,620) scale(0.8)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(520,700) scale(0.7)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(860,700) scale(0.75)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(600,570)"><path d="M-70,0 L70,0 L52,30 L-52,30 Z" fill="#0b1a24"/><rect x="-24" y="-30" width="48" height="30" rx="4" fill="#ffffff" stroke="#0b1a24" stroke-width="4"/><path d="M0,-30 L0,-56" stroke="#0b1a24" stroke-width="4"/><circle cx="0" cy="-58" r="5" fill="#96793d"/></g></g>
+<text x="600" y="466" font-size="20" fill="#0b1a24" font-weight="700" text-anchor="middle" letter-spacing="0">내부에서 선박 조업이 가능한 규모</text>
+<path d="M120,793 L120,807 M1080,793 L1080,807" stroke="#0b1a24" stroke-width="1.6"/><path d="M120,800 L1080,800" stroke="#0b1a24" stroke-width="1.4"/><path d="M120,800 l10,-5 v10 z M1080,800 l-10,-5 v10 z" fill="#0b1a24"/>
+<rect x="495" y="784" width="210" height="32" rx="5" fill="#f4f1ea"/><text x="600.0" y="807" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="middle" letter-spacing="0">터널 길이 200~300m</text>
+<rect x="60" y="120" width="290" height="112" rx="10" fill="#ffffff" stroke="#b8ad98" stroke-width="2"/><text x="80" y="158" font-size="22" fill="#0b1a24" font-weight="800" text-anchor="start" letter-spacing="0">지하 암반층</text>
+<text x="80" y="190" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">외부 기후와 완전히 차단</text>
+<text x="80" y="214" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">고수온 · 적조 · 태풍 영향 없음</text>
+<rect x="890" y="120" width="250" height="112" rx="10" fill="#ffffff" stroke="#b8ad98" stroke-width="2"/><text x="910" y="158" font-size="22" fill="#0f5c62" font-weight="800" text-anchor="start" letter-spacing="0">연중 14~15℃</text>
+<text x="910" y="190" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">지중열로 수온 유지</text>
+<text x="910" y="214" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">냉·난방 부하 최소</text>
+<text x="60" y="92" font-size="34" fill="#0b1a24" font-weight="800" text-anchor="start" letter-spacing="0">터널형 스마트 양식장</text>
 </svg>

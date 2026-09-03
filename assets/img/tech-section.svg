@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="터널형 양식장 단면도" font-family="'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
-<defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17a9ad" stop-opacity=".55"/><stop offset="1" stop-color="#113c60" stop-opacity=".88"/></linearGradient><linearGradient id="rk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4dfe9"/><stop offset="1" stop-color="#c2d1de"/></linearGradient></defs>
-<rect width="1200" height="900" fill="#eef3f8"/>
+<defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b8b90" stop-opacity=".55"/><stop offset="1" stop-color="#1d4356" stop-opacity=".88"/></linearGradient><linearGradient id="rk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ded7c9"/><stop offset="1" stop-color="#cec5b4"/></linearGradient></defs>
+<rect width="1200" height="900" fill="#f4f1ea"/>
 <path d="M0,196 C160,158 330,176 520,158 C740,138 950,182 1200,166 L1200,900 L0,900 Z" fill="url(#rk)"/>
-<path d="M0,196 C160,158 330,176 520,158 C740,138 950,182 1200,166" fill="none" stroke="#adbecd" stroke-width="3"/>
-<path d="M0,196 C160,158 330,176 520,158 C740,138 950,182 1200,166 L1200,186 C950,202 740,158 520,178 C330,196 160,178 0,216 Z" fill="#9fb8a4" opacity=".5"/>
-<path d="M-20,266 C300,250 700,280 1220,260" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M20,348 C300,332 700,362 1220,342" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M-20,430 C300,414 700,444 1220,424" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M20,512 C300,496 700,526 1220,506" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M-20,594 C300,578 700,608 1220,588" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M20,676 C300,660 700,690 1220,670" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M-20,758 C300,742 700,772 1220,752" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M20,840 C300,824 700,854 1220,834" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".5"/>
-<path d="M254,458 L160,431" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="160" cy="431" r="6" fill="#b8912f"/>
-<path d="M298,375 L223,312" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="223" cy="312" r="6" fill="#b8912f"/>
-<path d="M371,318 L328,230" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="328" cy="230" r="6" fill="#b8912f"/>
-<path d="M470,295 L470,197" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="470" cy="197" r="6" fill="#b8912f"/>
-<path d="M569,318 L612,230" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="612" cy="230" r="6" fill="#b8912f"/>
-<path d="M642,375 L717,312" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="717" cy="312" r="6" fill="#b8912f"/>
-<path d="M686,458 L780,431" stroke="#b8912f" stroke-width="4.5" stroke-linecap="round"/>
-<circle cx="780" cy="431" r="6" fill="#b8912f"/>
-<path d="M245,520 A225,225 0 0 1 695,520 L695,745 L245,745 Z" fill="none" stroke="#5b7183" stroke-width="26" opacity=".5"/>
-<path d="M245,520 A225,225 0 0 1 695,520 L695,745 L245,745 Z" fill="#ffffff" stroke="#0a2942" stroke-width="9"/>
+<path d="M0,196 C160,158 330,176 520,158 C740,138 950,182 1200,166" fill="none" stroke="#b8ad98" stroke-width="3"/>
+<path d="M0,196 C160,158 330,176 520,158 C740,138 950,182 1200,166 L1200,186 C950,202 740,158 520,178 C330,196 160,178 0,216 Z" fill="#9aa88f" opacity=".5"/>
+<path d="M-20,266 C300,250 700,280 1220,260" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M20,348 C300,332 700,362 1220,342" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M-20,430 C300,414 700,444 1220,424" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M20,512 C300,496 700,526 1220,506" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M-20,594 C300,578 700,608 1220,588" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M20,676 C300,660 700,690 1220,670" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M-20,758 C300,742 700,772 1220,752" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M20,840 C300,824 700,854 1220,834" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".5"/>
+<path d="M254,458 L160,431" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="160" cy="431" r="6" fill="#96793d"/>
+<path d="M298,375 L223,312" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="223" cy="312" r="6" fill="#96793d"/>
+<path d="M371,318 L328,230" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="328" cy="230" r="6" fill="#96793d"/>
+<path d="M470,295 L470,197" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="470" cy="197" r="6" fill="#96793d"/>
+<path d="M569,318 L612,230" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="612" cy="230" r="6" fill="#96793d"/>
+<path d="M642,375 L717,312" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="717" cy="312" r="6" fill="#96793d"/>
+<path d="M686,458 L780,431" stroke="#96793d" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="780" cy="431" r="6" fill="#96793d"/>
+<path d="M245,520 A225,225 0 0 1 695,520 L695,745 L245,745 Z" fill="none" stroke="#6b7178" stroke-width="26" opacity=".5"/>
+<path d="M245,520 A225,225 0 0 1 695,520 L695,745 L245,745 Z" fill="#ffffff" stroke="#0b1a24" stroke-width="9"/>
 <clipPath id="cb"><path d="M245,520 A225,225 0 0 1 695,520 L695,745 L245,745 Z"/></clipPath>
-<g clip-path="url(#cb)"><rect x="245" y="435" width="450" height="310" fill="url(#w)"/><path d="M245,745 L245,725 L331,725 L331,705 L417,705 L417,687 L523,687 L523,705 L609,705 L609,725 L695,725 L695,745 Z" fill="#0a2942" opacity=".45"/><path d="M245,435 C355,426 470,444 695,431" fill="none" stroke="#ffffff" stroke-width="3" opacity=".55"/><g transform="translate(330,523) scale(1.05)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(490,593) scale(0.82)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(436,491) scale(0.68)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(576,501) scale(0.9)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
+<g clip-path="url(#cb)"><rect x="245" y="435" width="450" height="310" fill="url(#w)"/><path d="M245,745 L245,725 L331,725 L331,705 L417,705 L417,687 L523,687 L523,705 L609,705 L609,725 L695,725 L695,745 Z" fill="#0b1a24" opacity=".45"/><path d="M245,435 C355,426 470,444 695,431" fill="none" stroke="#ffffff" stroke-width="3" opacity=".55"/><g transform="translate(330,523) scale(1.05)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(490,593) scale(0.82)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(436,491) scale(0.68)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(576,501) scale(0.9)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
 </g>
-<path d="M245,805 L245,819 M695,805 L695,819" stroke="#0a2942" stroke-width="1.6"/><path d="M245,812 L695,812" stroke="#0a2942" stroke-width="1.4"/><path d="M245,812 l10,-5 v10 z M695,812 l-10,-5 v10 z" fill="#0a2942"/>
-<rect x="391" y="796" width="158" height="32" rx="5" fill="#eef3f8"/><text x="470.0" y="819" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">굴착 직경 30m</text>
-<path d="M161,435 L175,435 M161,745 L175,745" stroke="#0a2942" stroke-width="1.6"/><path d="M168,435 L168,745" stroke="#0a2942" stroke-width="1.4"/><path d="M168,435 l-5,10 h10 z M168,745 l-5,-10 h10 z" fill="#0a2942"/>
-<rect x="89" y="574.0" width="158" height="32" rx="5" fill="#eef3f8"/><text x="168" y="597.0" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">유효 수심 15m</text>
-<path d="M628,252 L756,256" stroke="#5b7183" stroke-width="1.4" fill="none"/><circle cx="628" cy="252" r="3.5" fill="#5b7183"/>
-<rect x="762" y="238" width="194" height="36" rx="18" fill="#ffffff" stroke="#adbecd" stroke-width="1.5"/><text x="780" y="262" font-size="19" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">장대 락볼트 6~9m</text>
-<path d="M703,424 L756,366" stroke="#5b7183" stroke-width="1.4" fill="none"/><circle cx="703" cy="424" r="3.5" fill="#5b7183"/>
-<rect x="762" y="348" width="297" height="36" rx="18" fill="#ffffff" stroke="#adbecd" stroke-width="1.5"/><text x="780" y="372" font-size="19" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">강섬유 숏크리트 · 암반 아치</text>
-<path d="M692,478 L756,476" stroke="#5b7183" stroke-width="1.4" fill="none"/><circle cx="692" cy="478" r="3.5" fill="#5b7183"/>
-<rect x="762" y="458" width="314" height="36" rx="18" fill="#ffffff" stroke="#adbecd" stroke-width="1.5"/><text x="780" y="482" font-size="19" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">고내구성 내염 콘크리트 라이닝</text>
-<path d="M588,587 L756,586" stroke="#5b7183" stroke-width="1.4" fill="none"/><circle cx="588" cy="587" r="3.5" fill="#5b7183"/>
-<rect x="762" y="568" width="242" height="36" rx="18" fill="#ffffff" stroke="#adbecd" stroke-width="1.5"/><text x="780" y="592" font-size="19" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">연중 14~15℃ 염지하수</text>
-<path d="M530,699 L756,696" stroke="#5b7183" stroke-width="1.4" fill="none"/><circle cx="530" cy="699" r="3.5" fill="#5b7183"/>
-<rect x="762" y="678" width="327" height="36" rx="18" fill="#ffffff" stroke="#adbecd" stroke-width="1.5"/><text x="780" y="702" font-size="19" fill="#0a2942" font-weight="700" text-anchor="start" letter-spacing="0">계단식 저면 · 슬러지 중력 포집</text>
-<text x="60" y="92" font-size="34" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">터널형 스마트 양식장 단면</text>
-<text x="60" y="126" font-size="19" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">NATM 공법 · 무동력 순환 · 지중열 이용</text>
+<path d="M245,805 L245,819 M695,805 L695,819" stroke="#0b1a24" stroke-width="1.6"/><path d="M245,812 L695,812" stroke="#0b1a24" stroke-width="1.4"/><path d="M245,812 l10,-5 v10 z M695,812 l-10,-5 v10 z" fill="#0b1a24"/>
+<rect x="391" y="796" width="158" height="32" rx="5" fill="#f4f1ea"/><text x="470.0" y="819" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="middle" letter-spacing="0">굴착 직경 30m</text>
+<path d="M161,435 L175,435 M161,745 L175,745" stroke="#0b1a24" stroke-width="1.6"/><path d="M168,435 L168,745" stroke="#0b1a24" stroke-width="1.4"/><path d="M168,435 l-5,10 h10 z M168,745 l-5,-10 h10 z" fill="#0b1a24"/>
+<rect x="89" y="574.0" width="158" height="32" rx="5" fill="#f4f1ea"/><text x="168" y="597.0" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="middle" letter-spacing="0">유효 수심 15m</text>
+<path d="M628,252 L756,256" stroke="#6b7178" stroke-width="1.4" fill="none"/><circle cx="628" cy="252" r="3.5" fill="#6b7178"/>
+<rect x="762" y="238" width="194" height="36" rx="18" fill="#ffffff" stroke="#b8ad98" stroke-width="1.5"/><text x="780" y="262" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="start" letter-spacing="0">장대 락볼트 6~9m</text>
+<path d="M703,424 L756,366" stroke="#6b7178" stroke-width="1.4" fill="none"/><circle cx="703" cy="424" r="3.5" fill="#6b7178"/>
+<rect x="762" y="348" width="297" height="36" rx="18" fill="#ffffff" stroke="#b8ad98" stroke-width="1.5"/><text x="780" y="372" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="start" letter-spacing="0">강섬유 숏크리트 · 암반 아치</text>
+<path d="M692,478 L756,476" stroke="#6b7178" stroke-width="1.4" fill="none"/><circle cx="692" cy="478" r="3.5" fill="#6b7178"/>
+<rect x="762" y="458" width="314" height="36" rx="18" fill="#ffffff" stroke="#b8ad98" stroke-width="1.5"/><text x="780" y="482" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="start" letter-spacing="0">고내구성 내염 콘크리트 라이닝</text>
+<path d="M588,587 L756,586" stroke="#6b7178" stroke-width="1.4" fill="none"/><circle cx="588" cy="587" r="3.5" fill="#6b7178"/>
+<rect x="762" y="568" width="242" height="36" rx="18" fill="#ffffff" stroke="#b8ad98" stroke-width="1.5"/><text x="780" y="592" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="start" letter-spacing="0">연중 14~15℃ 염지하수</text>
+<path d="M530,699 L756,696" stroke="#6b7178" stroke-width="1.4" fill="none"/><circle cx="530" cy="699" r="3.5" fill="#6b7178"/>
+<rect x="762" y="678" width="327" height="36" rx="18" fill="#ffffff" stroke="#b8ad98" stroke-width="1.5"/><text x="780" y="702" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="start" letter-spacing="0">계단식 저면 · 슬러지 중력 포집</text>
+<text x="60" y="92" font-size="34" fill="#0b1a24" font-weight="800" text-anchor="start" letter-spacing="0">터널형 스마트 양식장 단면</text>
+<text x="60" y="126" font-size="19" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">NATM 공법 · 무동력 순환 · 지중열 이용</text>
 </svg>

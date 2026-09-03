@@ -1,38 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="염지하수 순환 시스템 흐름도" font-family="'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
-<rect width="1200" height="900" fill="#eef3f8"/>
-<text x="60" y="88" font-size="34" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">염지하수 순환 시스템</text>
-<text x="60" y="122" font-size="19" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">한 줄기 물에서 소금 · 생수 · 해산물 · 농업용수</text>
-<rect x="60" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="60" y="180" width="6" height="84" rx="3" fill="#0e8a91"/><text x="185.0" y="214" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">염지하수 관정</text>
-<text x="185.0" y="240" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">염도 20~24‰</text>
-<path d="M310,222 L374.0,222.0" stroke="#17a9ad" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M388,222 L374.0,230.0 L374.0,214.0 z" fill="#17a9ad"/>
-<rect x="390" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="390" y="180" width="6" height="84" rx="3" fill="#0e8a91"/><text x="515.0" y="214" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">염분 추출</text>
-<text x="515.0" y="240" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">역삼투압 분리</text>
-<path d="M640,222 L704.0,222.0" stroke="#17a9ad" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M718,222 L704.0,230.0 L704.0,214.0 z" fill="#17a9ad"/>
-<rect x="720" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0a2942" stroke-width="3"/><rect x="720" y="180" width="6" height="84" rx="3" fill="#0a2942"/><text x="845.0" y="214" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">저수조</text>
-<text x="845.0" y="240" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">해수와 동일 34‰</text>
-<path d="M185,264 L185.0,322.0" stroke="#b8912f" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M185,336 L177.0,322.0 L193.0,322.0 z" fill="#b8912f"/>
-<rect x="60" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#b8912f" stroke-width="3"/><rect x="60" y="340" width="6" height="84" rx="3" fill="#b8912f"/><text x="185.0" y="374" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">히트펌프</text>
-<text x="185.0" y="400" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">40~45℃ 냉·난방</text>
-<path d="M515,264 L515.0,322.0" stroke="#17a9ad" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M515,336 L507.0,322.0 L523.0,322.0 z" fill="#17a9ad"/>
-<rect x="390" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="390" y="340" width="6" height="84" rx="3" fill="#0e8a91"/><text x="515.0" y="374" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">미네랄 생수</text>
-<text x="515.0" y="400" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">병입 · 출하</text>
-<path d="M640,205 L690,205" stroke="#b8912f" stroke-width="4" stroke-dasharray="8 6"/><text x="665" y="194" font-size="15" fill="#b8912f" font-weight="700" text-anchor="middle" letter-spacing="0">소금</text>
-<path d="M845,264 L845.0,322.0" stroke="#113c60" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M845,336 L837.0,322.0 L853.0,322.0 z" fill="#113c60"/>
-<rect x="720" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#0a2942" stroke-width="3"/><rect x="720" y="340" width="6" height="84" rx="3" fill="#0a2942"/><text x="845.0" y="374" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">양식장</text>
-<text x="845.0" y="400" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">34‰ 해산물 양식</text>
-<path d="M845,424 L845.0,482.0" stroke="#113c60" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M845,496 L837.0,482.0 L853.0,482.0 z" fill="#113c60"/>
-<rect x="720" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="720" y="500" width="6" height="84" rx="3" fill="#0e8a91"/><text x="845.0" y="534" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">정수장</text>
-<text x="845.0" y="560" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">부유물 · 분뇨 처리</text>
-<path d="M720,542 L656.0,542.0" stroke="#113c60" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M642,542 L656.0,534.0 L656.0,550.0 z" fill="#113c60"/>
-<rect x="390" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="390" y="500" width="6" height="84" rx="3" fill="#0e8a91"/><text x="515.0" y="534" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">침전조</text>
-<text x="515.0" y="560" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">수상구조물</text>
-<path d="M390,542 L326.0,542.0" stroke="#113c60" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M312,542 L326.0,534.0 L326.0,550.0 z" fill="#113c60"/>
-<rect x="60" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0e8a91" stroke-width="3"/><rect x="60" y="500" width="6" height="84" rx="3" fill="#0e8a91"/><text x="185.0" y="534" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">염분 추출</text>
-<text x="185.0" y="560" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">역삼투압 분리</text>
-<path d="M185,584 L185.0,642.0" stroke="#113c60" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M185,656 L177.0,642.0 L193.0,642.0 z" fill="#113c60"/>
-<rect x="60" y="660" width="250" height="84" rx="10" fill="#ffffff" stroke="#b8912f" stroke-width="3"/><rect x="60" y="660" width="6" height="84" rx="3" fill="#b8912f"/><text x="185.0" y="694" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">농업용수</text>
-<text x="185.0" y="720" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">퇴수 재활용</text>
-<path d="M185,744 L185,806 L1128,806 L1128,222 L978,222" fill="none" stroke="#b8912f" stroke-width="4" stroke-dasharray="10 7"/><path d="M978,222 l16,-8 v16 z" fill="#b8912f"/><rect x="536" y="790" width="128" height="32" rx="5" fill="#eef3f8"/><text x="600" y="812" font-size="18" fill="#b8912f" font-weight="700" text-anchor="middle" letter-spacing="0">소금 재순환</text>
-<rect x="390" y="660" width="580" height="84" rx="10" fill="#e3f4f5" stroke="#0e8a91" stroke-width="3"/><rect x="390" y="660" width="6" height="84" rx="3" fill="#0e8a91"/><text x="680.0" y="694" font-size="21" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">태양광 · 풍력 발전</text>
-<text x="680.0" y="720" font-size="17" fill="#5b7183" font-weight="600" text-anchor="middle" letter-spacing="0">지붕 · 주차장 등 유휴 공간 활용, 대부분의 전력 담당</text>
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<text x="60" y="88" font-size="34" fill="#0b1a24" font-weight="800" text-anchor="start" letter-spacing="0">염지하수 순환 시스템</text>
+<text x="60" y="122" font-size="19" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">한 줄기 물에서 소금 · 생수 · 해산물 · 농업용수</text>
+<rect x="60" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="60" y="180" width="6" height="84" rx="3" fill="#0f5c62"/><text x="185.0" y="214" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">염지하수 관정</text>
+<text x="185.0" y="240" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">염도 20~24‰</text>
+<path d="M310,222 L374.0,222.0" stroke="#1b8b90" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M388,222 L374.0,230.0 L374.0,214.0 z" fill="#1b8b90"/>
+<rect x="390" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="390" y="180" width="6" height="84" rx="3" fill="#0f5c62"/><text x="515.0" y="214" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">염분 추출</text>
+<text x="515.0" y="240" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">역삼투압 분리</text>
+<path d="M640,222 L704.0,222.0" stroke="#1b8b90" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M718,222 L704.0,230.0 L704.0,214.0 z" fill="#1b8b90"/>
+<rect x="720" y="180" width="250" height="84" rx="10" fill="#ffffff" stroke="#0b1a24" stroke-width="3"/><rect x="720" y="180" width="6" height="84" rx="3" fill="#0b1a24"/><text x="845.0" y="214" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">저수조</text>
+<text x="845.0" y="240" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">해수와 동일 34‰</text>
+<path d="M185,264 L185.0,322.0" stroke="#96793d" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M185,336 L177.0,322.0 L193.0,322.0 z" fill="#96793d"/>
+<rect x="60" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#96793d" stroke-width="3"/><rect x="60" y="340" width="6" height="84" rx="3" fill="#96793d"/><text x="185.0" y="374" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">히트펌프</text>
+<text x="185.0" y="400" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">40~45℃ 냉·난방</text>
+<path d="M515,264 L515.0,322.0" stroke="#1b8b90" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M515,336 L507.0,322.0 L523.0,322.0 z" fill="#1b8b90"/>
+<rect x="390" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="390" y="340" width="6" height="84" rx="3" fill="#0f5c62"/><text x="515.0" y="374" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">미네랄 생수</text>
+<text x="515.0" y="400" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">병입 · 출하</text>
+<path d="M640,205 L690,205" stroke="#96793d" stroke-width="4" stroke-dasharray="8 6"/><text x="665" y="194" font-size="15" fill="#96793d" font-weight="700" text-anchor="middle" letter-spacing="0">소금</text>
+<path d="M845,264 L845.0,322.0" stroke="#1d4356" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M845,336 L837.0,322.0 L853.0,322.0 z" fill="#1d4356"/>
+<rect x="720" y="340" width="250" height="84" rx="10" fill="#ffffff" stroke="#0b1a24" stroke-width="3"/><rect x="720" y="340" width="6" height="84" rx="3" fill="#0b1a24"/><text x="845.0" y="374" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">양식장</text>
+<text x="845.0" y="400" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">34‰ 해산물 양식</text>
+<path d="M845,424 L845.0,482.0" stroke="#1d4356" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M845,496 L837.0,482.0 L853.0,482.0 z" fill="#1d4356"/>
+<rect x="720" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="720" y="500" width="6" height="84" rx="3" fill="#0f5c62"/><text x="845.0" y="534" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">정수장</text>
+<text x="845.0" y="560" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">부유물 · 분뇨 처리</text>
+<path d="M720,542 L656.0,542.0" stroke="#1d4356" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M642,542 L656.0,534.0 L656.0,550.0 z" fill="#1d4356"/>
+<rect x="390" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="390" y="500" width="6" height="84" rx="3" fill="#0f5c62"/><text x="515.0" y="534" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">침전조</text>
+<text x="515.0" y="560" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">수상구조물</text>
+<path d="M390,542 L326.0,542.0" stroke="#1d4356" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M312,542 L326.0,534.0 L326.0,550.0 z" fill="#1d4356"/>
+<rect x="60" y="500" width="250" height="84" rx="10" fill="#ffffff" stroke="#0f5c62" stroke-width="3"/><rect x="60" y="500" width="6" height="84" rx="3" fill="#0f5c62"/><text x="185.0" y="534" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">염분 추출</text>
+<text x="185.0" y="560" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">역삼투압 분리</text>
+<path d="M185,584 L185.0,642.0" stroke="#1d4356" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M185,656 L177.0,642.0 L193.0,642.0 z" fill="#1d4356"/>
+<rect x="60" y="660" width="250" height="84" rx="10" fill="#ffffff" stroke="#96793d" stroke-width="3"/><rect x="60" y="660" width="6" height="84" rx="3" fill="#96793d"/><text x="185.0" y="694" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">농업용수</text>
+<text x="185.0" y="720" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">퇴수 재활용</text>
+<path d="M185,744 L185,806 L1128,806 L1128,222 L978,222" fill="none" stroke="#96793d" stroke-width="4" stroke-dasharray="10 7"/><path d="M978,222 l16,-8 v16 z" fill="#96793d"/><rect x="536" y="790" width="128" height="32" rx="5" fill="#f4f1ea"/><text x="600" y="812" font-size="18" fill="#96793d" font-weight="700" text-anchor="middle" letter-spacing="0">소금 재순환</text>
+<rect x="390" y="660" width="580" height="84" rx="10" fill="#e3f4f5" stroke="#0f5c62" stroke-width="3"/><rect x="390" y="660" width="6" height="84" rx="3" fill="#0f5c62"/><text x="680.0" y="694" font-size="21" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">태양광 · 풍력 발전</text>
+<text x="680.0" y="720" font-size="17" fill="#6b7178" font-weight="600" text-anchor="middle" letter-spacing="0">지붕 · 주차장 등 유휴 공간 활용, 대부분의 전력 담당</text>
 </svg>

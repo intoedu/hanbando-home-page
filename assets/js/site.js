@@ -84,15 +84,22 @@ const ICON = {
 const LOGO_MARK = `
 <svg class="brand__mark" viewBox="0 0 64 64" role="img" aria-hidden="true">
   <defs>
-    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17a9ad"/>
-      <stop offset="1" stop-color="#0a2942"/>
+    <linearGradient id="lg" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#1d4356"/>
+      <stop offset="1" stop-color="#0b1a24"/>
     </linearGradient>
   </defs>
-  <circle cx="32" cy="32" r="30" fill="url(#lg)"/>
-  <path d="M12 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
-  <path d="M12 46c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#c9a94e" stroke-width="3" stroke-linecap="round" opacity=".85"/>
-  <path d="M24 24c4-7 12-9 18-6-1 7-7 12-14 12-2 0-3-.3-4-.6V24Z" fill="#fff" opacity=".92"/>
+  <!-- 방패형 인장 -->
+  <path d="M32 2 58 10v24c0 15-11 24-26 28C17 58 6 49 6 34V10L32 2Z" fill="url(#lg)"/>
+  <path d="M32 6 54 12.8V34c0 12.6-9.2 20.4-22 24-12.8-3.6-22-11.4-22-24V12.8L32 6Z" fill="none" stroke="#c4ac74" stroke-width="1.2" opacity=".8"/>
+  <!-- 지하 수평선 -->
+  <path d="M13 34h38" stroke="#c4ac74" stroke-width="1.4" opacity=".55"/>
+  <!-- 물결 -->
+  <path d="M14 41c4.5-4 8-4 12.5 0s8 4 12.5 0 8-4 11-1.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" opacity=".92"/>
+  <path d="M14 48.5c4.5-4 8-4 12.5 0s8 4 12.5 0 8-4 11-1.6" fill="none" stroke="#c4ac74" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+  <!-- 해 -->
+  <circle cx="32" cy="23" r="7.5" fill="none" stroke="#fff" stroke-width="2.2" opacity=".9"/>
+  <path d="M32 15.5v15" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".5"/>
 </svg>`;
 
 /* =========================================================

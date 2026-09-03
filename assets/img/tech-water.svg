@@ -1,34 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="무동력 수압 순환 계통도" font-family="'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
-<defs><linearGradient id="w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17a9ad" stop-opacity=".5"/><stop offset="1" stop-color="#113c60" stop-opacity=".85"/></linearGradient></defs>
-<rect width="1200" height="900" fill="#eef3f8"/>
-<path d="M0,350 L280,350 C400,350 410,500 540,500 L1200,500 L1200,900 L0,900 Z" fill="#d4dfe9"/>
-<path d="M0,350 L280,350 C400,350 410,500 540,500 L1200,500" fill="none" stroke="#adbecd" stroke-width="3"/>
-<path d="M0,580 C350,566 800,594 1200,576" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".45"/>
-<path d="M0,662 C350,648 800,676 1200,658" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".45"/>
-<path d="M0,744 C350,730 800,758 1200,740" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".45"/>
-<path d="M0,826 C350,812 800,840 1200,822" fill="none" stroke="#adbecd" stroke-width="1.5" opacity=".45"/>
-<rect x="66" y="196" width="224" height="154" rx="8" fill="#ffffff" stroke="#0a2942" stroke-width="6"/>
+<defs><linearGradient id="w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b8b90" stop-opacity=".5"/><stop offset="1" stop-color="#1d4356" stop-opacity=".85"/></linearGradient></defs>
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<path d="M0,350 L280,350 C400,350 410,500 540,500 L1200,500 L1200,900 L0,900 Z" fill="#ded7c9"/>
+<path d="M0,350 L280,350 C400,350 410,500 540,500 L1200,500" fill="none" stroke="#b8ad98" stroke-width="3"/>
+<path d="M0,580 C350,566 800,594 1200,576" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".45"/>
+<path d="M0,662 C350,648 800,676 1200,658" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".45"/>
+<path d="M0,744 C350,730 800,758 1200,740" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".45"/>
+<path d="M0,826 C350,812 800,840 1200,822" fill="none" stroke="#b8ad98" stroke-width="1.5" opacity=".45"/>
+<rect x="66" y="196" width="224" height="154" rx="8" fill="#ffffff" stroke="#0b1a24" stroke-width="6"/>
 <rect x="78" y="242" width="200" height="96" rx="4" fill="url(#w2)"/>
 <path d="M78,246 C126,236 196,258 278,244" fill="none" stroke="#ffffff" stroke-width="3" opacity=".7"/>
-<text x="178.0" y="176" font-size="22" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">고지대 저수조</text>
-<path d="M290,292 L392,292 L392,610 L556,610" fill="none" stroke="#0a2942" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M290,292 L392,292 L392,610 L556,610" fill="none" stroke="#17a9ad" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M392,420 L392.0,506.0" stroke="#17a9ad" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M392,520 L384.0,506.0 L400.0,506.0 z" fill="#17a9ad"/>
-<path d="M463,350 L477,350 M463,500 L477,500" stroke="#0a2942" stroke-width="1.6"/><path d="M470,350 L470,500" stroke="#0a2942" stroke-width="1.4"/><path d="M470,350 l-5,10 h10 z M470,500 l-5,-10 h10 z" fill="#0a2942"/>
-<rect x="426" y="409.0" width="89" height="32" rx="5" fill="#eef3f8"/><text x="470" y="432.0" font-size="19" fill="#0a2942" font-weight="700" text-anchor="middle" letter-spacing="0">낙차 H</text>
-<text x="530" y="462" font-size="19" fill="#0e8a91" font-weight="700" text-anchor="start" letter-spacing="0">위치에너지 + 낙차 압력</text>
-<rect x="556" y="566" width="518" height="234" rx="14" fill="#ffffff" stroke="#0a2942" stroke-width="8"/>
-<clipPath id="cc"><rect x="556" y="566" width="518" height="234" rx="14"/></clipPath><g clip-path="url(#cc)"><rect x="556" y="614" width="518" height="186" fill="url(#w2)"/><path d="M556,800 L556,784 L684,784 L684,766 L812,766 L812,748 L1074,748 L1074,800 Z" fill="#0a2942" opacity=".45"/><g transform="translate(690,672) scale(1.0)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(872,706) scale(0.78)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
-<g transform="translate(784,636) scale(0.68)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0a2942" opacity=".7"/></g>
+<text x="178.0" y="176" font-size="22" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">고지대 저수조</text>
+<path d="M290,292 L392,292 L392,610 L556,610" fill="none" stroke="#0b1a24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M290,292 L392,292 L392,610 L556,610" fill="none" stroke="#1b8b90" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M392,420 L392.0,506.0" stroke="#1b8b90" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M392,520 L384.0,506.0 L400.0,506.0 z" fill="#1b8b90"/>
+<path d="M463,350 L477,350 M463,500 L477,500" stroke="#0b1a24" stroke-width="1.6"/><path d="M470,350 L470,500" stroke="#0b1a24" stroke-width="1.4"/><path d="M470,350 l-5,10 h10 z M470,500 l-5,-10 h10 z" fill="#0b1a24"/>
+<rect x="426" y="409.0" width="89" height="32" rx="5" fill="#f4f1ea"/><text x="470" y="432.0" font-size="19" fill="#0b1a24" font-weight="700" text-anchor="middle" letter-spacing="0">낙차 H</text>
+<text x="530" y="462" font-size="19" fill="#0f5c62" font-weight="700" text-anchor="start" letter-spacing="0">위치에너지 + 낙차 압력</text>
+<rect x="556" y="566" width="518" height="234" rx="14" fill="#ffffff" stroke="#0b1a24" stroke-width="8"/>
+<clipPath id="cc"><rect x="556" y="566" width="518" height="234" rx="14"/></clipPath><g clip-path="url(#cc)"><rect x="556" y="614" width="518" height="186" fill="url(#w2)"/><path d="M556,800 L556,784 L684,784 L684,766 L812,766 L812,748 L1074,748 L1074,800 Z" fill="#0b1a24" opacity=".45"/><g transform="translate(690,672) scale(1.0)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(872,706) scale(0.78)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
+<g transform="translate(784,636) scale(0.68)" fill="#ffffff" opacity="0.85"><path d="M0,0 c10,-9 30,-12 44,0 c-14,12 -34,9 -44,0 z"/><path d="M44,0 l14,-8 v16 z"/><circle cx="12" cy="-2" r="2" fill="#0b1a24" opacity=".7"/></g>
 <path d="M620,690 C720,660 860,660 960,688" fill="none" stroke="#ffffff" stroke-width="6" opacity=".8" stroke-linecap="round"/><path d="M960,688 l-16,-9 v18 z" fill="#ffffff" opacity=".8"/><path d="M990,752 C880,776 700,776 600,754" fill="none" stroke="#ffffff" stroke-width="5" opacity=".6" stroke-linecap="round"/><path d="M600,754 l16,-9 v18 z" fill="#ffffff" opacity=".6"/></g>
-<text x="815.0" y="544" font-size="22" fill="#0a2942" font-weight="800" text-anchor="middle" letter-spacing="0">터널 양식 수조</text>
-<path d="M1074,772 L1124,772 L1124,856" fill="none" stroke="#0a2942" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1074,772 L1124,772 L1124,856" fill="none" stroke="#b8912f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1104" y="884" font-size="18" fill="#b8912f" font-weight="700" text-anchor="end" letter-spacing="0">최하단 배출구</text>
-<rect x="66" y="616" width="404" height="132" rx="12" fill="#ffffff" stroke="#adbecd" stroke-width="2"/><text x="94" y="660" font-size="26" fill="#0e8a91" font-weight="800" text-anchor="start" letter-spacing="0">전기 모터 0대</text>
-<text x="94" y="694" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">파스칼의 원리를 응용해 고지대 저수조의</text>
-<text x="94" y="720" font-size="17" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">위치 에너지와 낙차 압력만으로 순환합니다.</text>
-<text x="60" y="92" font-size="34" fill="#0a2942" font-weight="800" text-anchor="start" letter-spacing="0">무동력 수압 순환 계통</text>
-<text x="60" y="126" font-size="19" fill="#5b7183" font-weight="600" text-anchor="start" letter-spacing="0">펌프 없이 24시간 수질을 순환시키는 구조</text>
+<text x="815.0" y="544" font-size="22" fill="#0b1a24" font-weight="800" text-anchor="middle" letter-spacing="0">터널 양식 수조</text>
+<path d="M1074,772 L1124,772 L1124,856" fill="none" stroke="#0b1a24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1074,772 L1124,772 L1124,856" fill="none" stroke="#96793d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1104" y="884" font-size="18" fill="#96793d" font-weight="700" text-anchor="end" letter-spacing="0">최하단 배출구</text>
+<rect x="66" y="616" width="404" height="132" rx="12" fill="#ffffff" stroke="#b8ad98" stroke-width="2"/><text x="94" y="660" font-size="26" fill="#0f5c62" font-weight="800" text-anchor="start" letter-spacing="0">전기 모터 0대</text>
+<text x="94" y="694" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">파스칼의 원리를 응용해 고지대 저수조의</text>
+<text x="94" y="720" font-size="17" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">위치 에너지와 낙차 압력만으로 순환합니다.</text>
+<text x="60" y="92" font-size="34" fill="#0b1a24" font-weight="800" text-anchor="start" letter-spacing="0">무동력 수압 순환 계통</text>
+<text x="60" y="126" font-size="19" fill="#6b7178" font-weight="600" text-anchor="start" letter-spacing="0">펌프 없이 24시간 수질을 순환시키는 구조</text>
 </svg>
