@@ -22,9 +22,14 @@
 <main id="main">
 
   <!-- ============ 히어로 ============ -->
-  <section class="hero">
+  <section class="hero hero--photo">
+    <!-- 배경 사진 : 이 파일만 교체하시면 첫 화면이 바뀝니다 (권장 2400x1300 이상) -->
+    <img class="hero__bg" src="assets/img/hero-aerial.jpg"
+         alt="해안 매립 부지에 조성된 양식 수면 · 염전 · 태양광 · 해상풍력 복합단지 조감도"
+         width="2400" height="1300" fetchpriority="high">
+
     <div class="wrap hero__inner">
-      <div>
+      <div class="hero__copy">
         <span class="hero__badge">
           <span data-lang="ko">해양수산부 제278호 사단법인</span>
           <span data-lang="en">Non-profit association · MOF No. 278</span>
@@ -49,22 +54,13 @@
           </a>
         </div>
       </div>
-
-      <div class="hero__panel">
-        <div class="hero__panel-media">
-          <img src="assets/img/tech-section.svg" alt="터널형 스마트 양식장 단면도" width="1200" height="900">
-        </div>
-        <div class="hero__panel-body">
-          <h3>
-            <span data-lang="ko">친환경 무동력 터널형 스마트 양식 플랜트</span>
-            <span data-lang="en">Power-free Tunnel Aquaculture Plant</span>
-          </h3>
-          <a class="link-more mt-2" href="business.html#tunnel" style="color:var(--brass-500)">
-            <span data-lang="ko">기술 보기</span><span data-lang="en">See the technology</span>
-          </a>
-        </div>
-      </div>
     </div>
+
+    <!-- 사진 설명 -->
+    <p class="hero__credit">
+      <span data-lang="ko">해안 부지 복합단지 조감도 · 양식 수면, 스마트 염전, 재생에너지 설비</span>
+      <span data-lang="en">Coastal complex rendering · aquaculture basin, smart salt farm, renewables</span>
+    </p>
 
     <!-- 규모 지표 -->
     <div class="hero-stats">
