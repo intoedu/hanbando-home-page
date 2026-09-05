@@ -379,9 +379,9 @@ table { border-collapse: collapse; width: 100%; }
 .hero--photo::after {
   z-index: 1;
   background-image:
-    linear-gradient(100deg, rgba(8, 20, 28, 0.95) 0%, rgba(8, 20, 28, 0.84) 32%,
-                    rgba(8, 20, 28, 0.44) 62%, rgba(8, 20, 28, 0.26) 100%),
-    linear-gradient(180deg, rgba(8, 20, 28, 0.5) 0%, transparent 24%, rgba(8, 20, 28, 0.6) 100%);
+    linear-gradient(100deg, rgba(8, 20, 28, 0.96) 0%, rgba(8, 20, 28, 0.94) 42%,
+                    rgba(8, 20, 28, 0.7) 66%, rgba(8, 20, 28, 0.5) 100%),
+    linear-gradient(180deg, rgba(8, 20, 28, 0.55) 0%, rgba(8, 20, 28, 0.2) 30%, rgba(8, 20, 28, 0.66) 100%);
   background-size: auto;
   mask-image: none; -webkit-mask-image: none;
 }
