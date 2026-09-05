@@ -56,11 +56,14 @@
       </div>
     </div>
 
-    <!-- 사진 설명 -->
-    <p class="hero__credit">
-      <span data-lang="ko">에너지 자립형 스마트 염전 · 심층염지하수 저온 농축 프리미엄 천일염 생산 시설</span>
-      <span data-lang="en">Energy self-sufficient smart salt farm · premium sea salt from deep brine</span>
-    </p>
+    <!-- 하단 : 스크롤 안내 + 사진 설명 -->
+    <div class="hero__foot">
+      <span class="hero__scroll" aria-hidden="true"><i></i>SCROLL</span>
+      <p class="hero__credit">
+        <span data-lang="ko">에너지 자립형 스마트 염전 · 심층염지하수 저온 농축 프리미엄 천일염 생산 시설</span>
+        <span data-lang="en">Energy self-sufficient smart salt farm · premium sea salt from deep brine</span>
+      </p>
+    </div>
 
     <!-- 규모 지표 -->
     <div class="hero-stats">
@@ -126,9 +129,15 @@
   <!-- ============ 무엇을 하는 곳인가 ============ -->
   <section class="section" style="padding-top:72px">
     <div class="wrap">
-      <div class="section-head center reveal">
-        <span class="eyebrow">사업 분야</span>
-        <h2 class="h-1"><span data-lang="ko">이런 일을 합니다</span><span data-lang="en">What We Do</span></h2>
+      <div class="section-head section-head--rule section-head--split reveal">
+        <div>
+          <span class="eyebrow" data-no="01">사업 분야</span>
+          <h2 class="h-1 mt-2"><span data-lang="ko">이런 일을 합니다</span><span data-lang="en">What We Do</span></h2>
+        </div>
+        <p class="lead">
+          <span data-lang="ko">정관 제4조에 정한 네 갈래 사업입니다. 기술을 만들고, 현장에 옮기고, 사람을 길러 밖으로 내보냅니다.</span>
+          <span data-lang="en">Four lines of work: build the technology, take it to the field, train the people, and carry it abroad.</span>
+        </p>
       </div>
 
       <div class="grid grid-4">
@@ -170,8 +179,8 @@
   <!-- ============ 핵심 기술 한 장 요약 ============ -->
   <section class="section section--soft">
     <div class="wrap">
-      <div class="section-head center reveal">
-        <span class="eyebrow">핵심 기술</span>
+      <div class="section-head section-head--rule center reveal">
+        <span class="eyebrow" data-no="02">핵심 기술</span>
         <h2 class="h-1"><span data-lang="ko">전기 모터 없이 도는 양식장</span><span data-lang="en">A Farm That Runs Without Motors</span></h2>
         <p class="lead">
           <span data-lang="ko">고지대 저수조의 낙차 압력만으로 물을 순환시킵니다.</span>
@@ -179,7 +188,7 @@
         </p>
       </div>
 
-      <div class="figure figure--wide reveal">
+      <div class="figure figure--wide reveal" data-plate="도판 01 — 무동력 수압 순환 계통">
         <img src="assets/img/tech-water.svg" alt="무동력 수압 순환 계통도" width="1200" height="900" loading="lazy">
       </div>
 
@@ -210,13 +219,30 @@
   </section>
 
   <!-- ============ 성과 밴드 ============ -->
-  <section class="section section--deep section--tight">
+  <!-- ============ 협회 개요 + 인사말 ============ -->
+  <section class="section section--deep">
     <div class="wrap">
-      <div class="section-head center reveal" style="margin-bottom:36px">
-        <span class="eyebrow">협회 개요</span>
-        <h2 class="h-2 mt-2"><span data-lang="ko">해양수산부가 승인한 사단법인입니다</span><span data-lang="en">Approved by the Ministry of Oceans and Fisheries</span></h2>
+
+      <div class="deep-head">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <span class="eyebrow" data-no="03">협회 개요</span>
+          <h2 class="h-1 mt-2">
+            <span data-lang="ko">해양수산부가<br>승인한 사단법인입니다</span>
+            <span data-lang="en">A non-profit approved by<br>the Ministry of Oceans and Fisheries</span>
+          </h2>
+        </div>
+
+        <blockquote class="pull-quote reveal" data-delay="1">
+          <span data-lang="ko">“기후를 이기려 하기보다, 기후가 닿지 않는 곳으로 바다를 옮기기로 했습니다.”</span>
+          <span data-lang="en">“Rather than fight the climate, we moved the sea where the climate cannot reach.”</span>
+          <cite>
+            <span data-lang="ko">사단법인 한반도양식기술보급협회 회장 <strong>김창운</strong> · 해안천 명장</span>
+            <span data-lang="en">Chairman <strong>Kim Chang-woon</strong>, KPATA</span>
+          </cite>
+        </blockquote>
       </div>
-      <div class="hero-stats__grid" style="border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)">
+
+      <div class="hero-stats__grid reveal" style="border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)">
         <div class="hero-stats__item">
           <div class="hero-stats__num">2019</div>
           <div class="hero-stats__label"><span data-lang="ko">설립 승인 (제278호)</span><span data-lang="en">Approved (No. 278)</span></div>
@@ -234,28 +260,16 @@
           <div class="hero-stats__label"><span data-lang="ko">수상 내역</span><span data-lang="en">Awards</span></div>
         </div>
       </div>
-      <p class="center mt-4">
+
+      <div class="deep-actions reveal">
         <a class="btn btn--ghost btn--sm" href="about.html">
           <span data-lang="ko">협회 소개 보기</span><span data-lang="en">About us</span>
         </a>
-      </p>
-    </div>
-  </section>
+        <a class="link-more" href="about.html#greeting">
+          <span data-lang="ko">인사말 전문</span><span data-lang="en">Read the full message</span>
+        </a>
+      </div>
 
-  <!-- ============ 인사말 ============ -->
-  <section class="section section--deep">
-    <div class="wrap-narrow center">
-      <blockquote class="greeting-quote reveal" style="border:0;padding:0;text-align:center;color:#fff">
-        <span data-lang="ko">“기후를 이기려 하기보다,<br>기후가 닿지 않는 곳으로 바다를 옮기기로 했습니다.”</span>
-        <span data-lang="en">“Rather than fight the climate,<br>we moved the sea where the climate cannot reach.”</span>
-      </blockquote>
-      <p class="mt-3" style="color:rgba(255,255,255,.72)">
-        <span data-lang="ko">사단법인 한반도양식기술보급협회 회장 김창운</span>
-        <span data-lang="en">Kim Chang-woon, Chairman</span>
-      </p>
-      <a class="link-more mt-3" href="about.html#greeting" style="color:var(--sea-500)">
-        <span data-lang="ko">인사말 전문</span><span data-lang="en">Read the full message</span>
-      </a>
     </div>
   </section>
 
@@ -267,7 +281,7 @@
       <div class="reveal">
         <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:22px">
           <div>
-            <span class="eyebrow">공지 · 소식</span>
+            <span class="eyebrow" data-no="04">공지 · 소식</span>
             <h2 class="h-2 mt-2"><span data-lang="ko">협회 소식</span><span data-lang="en">News</span></h2>
           </div>
           <a class="link-more" href="news.html">
